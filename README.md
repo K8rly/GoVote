@@ -40,6 +40,8 @@ Which voters vote by mail vs in person?
 Voters who registered in a different zip than their home
 Voters who voted by mail vs in person
 
+Splitting dataset: demographic and election info
+
 ## Role Distribution
 
 Circle - Database (Sarah)
