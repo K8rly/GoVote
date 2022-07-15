@@ -1,14 +1,13 @@
 # GoVote
 
-=======
-## Selected topic
+### Selected topic
 Voter registration in Cuyahoga County by Age and Precinct
 
-## Reason we selected the topic
+### Reason we selected the topic
 
-## Description of the source of data
+### Description of the source of data
 
-## Questions we hope to answer with the data
+### Questions we hope to answer with the data
 
 What age group is more likely to vote? More likely to vote Republican or Democrat?
 
