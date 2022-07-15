@@ -1,5 +1,6 @@
 # GoVote
 
+=======
 ## Selected topic
 Voter registration in Cuyahoga County by Age and Precinct
 
@@ -71,3 +72,4 @@ How does this model work?
 
 ## Dashboard
 We will integrate Tableau for a fully functioning and interactive dashboard. It will be hosted on a GitHub Page.
+
