@@ -6,7 +6,7 @@ This project is a collaboration between the four baddest b*tches in class. This 
 ## Selected topic
 Voter registration in Cuyahoga County by Age and Precinct
 
-## Reason they selected the topic
+## Reason we selected the topic
 
 ## Description of the source of data
 
@@ -41,6 +41,8 @@ Which voters vote by mail vs in person?
 
 Voters who registered in a different zip than their home
 Voters who voted by mail vs in person
+
+Splitting dataset: demographic and election info
 
 ## Role Distribution
 
