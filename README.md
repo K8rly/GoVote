@@ -1,50 +1,77 @@
 # GoVote
 
-## Selected Topic
-Our topic will be: Registered Voter data for Cuyahoga County 
+
+### Selected topic
+Analyzing voter registration in Cuyahoga County by Age and Precinct in order to determine trends in voting patterns and party affiliation
+
+### Reason we selected the topic
+The United State is experiencing high levels of political turmoil, making this topic extremely relevant. Our group would like to analyze voter data to paint a picture of the c
+
+### Description of the source of data
+
+### Questions they hope to answer with the data
+
+What age group is more likely to vote? More likely to vote Republican or Democrat?
+
+What precinct is more likely to vote? More likely to vote Republican or Democrat?
 
 
-## Reason we selected this topic
-Lately in the United States we have faced political turmoil at every turn. The state of our country and our democracy is at risk, emphasizing an importance to vote and secure a less grim future for our society. Our group feels that focusing on voter turnout by location and age is a relevant topic to examine and analyze because of our current climate. Voting prediction could be a valuable asset in the coming months, while identifying discrepancies in access to voting locations may paint an important picture. This topic has really captured our attention based on our country's unrest, and we intend to answer relevant questions based on a robust dataset.
-
-## Description of source of data 
-The Cuyahoga County Board of Elections website has many public datasets available. For this project we will utilize the countywide districts (registered voters) dataset. We have contacted the Cuyahoga County Board of Elections to assist with interpreting our dataset, and have chosen to use a government website as opposed to less credible source.
-
-https://boe.cuyahogacounty.gov/maps-and-data
+**Prediction: Which age groups/precincts are more likely to vote Republican or Democrat?
 
 
-## Questions we hope to answer with the data
-
-What age groups are more likely to vote? Republican vs Democrat?
-
-Which precincts are more likely to vote? Republican vs Democrat?
-
+Zip Code
 
 Election type
 
 Election year
 
-Zip Code
+Count - people registered vs people voting (%, mean etc)
 
-District
+Which voters voted in all elections vs only key elections (2008/2020 vs 2012/2016)?
+Presidential election vs all elections?
 
+Which voters were registered but didn't vote?
 
+Heat map to visualize by precinct
 
-Which voters voted in both primary and general elections consistently?  
-Which voters voted ONLY in general vs primary elections?
-Which voters voted in both primary and general elections?
-Which voters voted in 2008/2020 but not 2012/2016?
-
-How many people are registered to vote vs how many people actually voted in each district/zip code/age group?
-
+Which districts/zip codes have more people who are registered but not voting? Is this related to access?
+Which voters vote by mail vs in person?
 
 
-## Roles for Segment 1
+Voters who registered in a different zip than their home
+Voters who voted by mail vs in person
 
-Circle - Sarah
+Splitting dataset: demographic and election info
 
-Square - GitHub Repo (Katterli)
+## Role Distribution
 
-Triangle - Emad
+Circle - Database (Sarah)
+Square - Github (Katterli)
+Triangle - ML Model - Supervised/Classification Model or Clustering (Emad)
+X - Technologies used (Leiana)
+X Role (to be added to technology.md file on X's branch)
 
-X Role - Leiana
+For application/webpage:
+Put in DOB, district/zip code, etc. predict what party someone will vote for?
+
+
+
+## Communication Protocols
+In case of an emergency (e.g., whom to contact, whether an emergency message should be sent through Slack or email, and so forth).
+
+
+# Technologies Used
+
+## Data Cleaning and Analysis
+Pandas will be used to clean the data and perform an exploratory analysis. Further analysis will be completed using Python.
+## Database Storage
+PgAdmin is the database we intend to use, and we will use SQL to query and visualize the data.
+## Machine Learning
+________ is the ML library we'll be using to create a classifier. Our training and testing setup is ___. Extra ML verbiage here.
+Which model did you choose and why?
+How are you training your model?
+What is the model's accuracy?
+How does this model work?
+
+## Dashboard
+We will integrate Tableau for a fully functioning and interactive dashboard. It will be hosted on a GitHub Page.
