@@ -1,10 +1,6 @@
 *.csv
 .DS_Store
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 364cda2921d263467b0fa0f202efee97bddfa43e
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
