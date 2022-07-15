@@ -1,6 +1,7 @@
 # GoVote
 
 ### Selected topic
+
 Voter registration in Cuyahoga County by Age and Precinct
 
 ### Reason we selected the topic
@@ -8,6 +9,16 @@ Voter registration in Cuyahoga County by Age and Precinct
 ### Description of the source of data
 
 ### Questions we hope to answer with the data
+
+Analyzing voter registration in Cuyahoga County by Age and Precinct in order to determine trends in voting patterns and party affiliation
+
+### Reason we selected the topic
+The United State is experiencing high levels of political turmoil, making this topic extremely relevant. Our group would like to analyze voter data to paint a picture of the c
+
+### Description of the source of data
+
+### Questions they hope to answer with the data
+
 
 What age group is more likely to vote? More likely to vote Republican or Democrat?
 
@@ -73,4 +84,3 @@ How does this model work?
 
 ## Dashboard
 We will integrate Tableau for a fully functioning and interactive dashboard. It will be hosted on a GitHub Page.
-
