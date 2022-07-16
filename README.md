@@ -7,9 +7,9 @@ Analyzing voter registration in Cuyahoga County by Age and Precinct in order to 
 The United States is experiencing high levels of political turmoil, making this topic extremely relevant. Our group would like to identify potential factors contributing to voting trends within our shared home county, and analyze voter data to relate generational identification to voting patterns. In analyzing this data we hope to predict which party affiliation groups are more likely to vote for based on demographic and geographic features.
 
 ### Description of the source of data
-The Cuyahoga County Board of Elections serves its citizens by conducting the fundamental and vital functions of the election process. The Cuyahoga County Board of Elections has many datasets available to the public on their website HERE. We chose to use a government site as opposed to a less credible source in order to ensure we are using clean and accurate data. 
+The Cuyahoga County Board of Elections serves its citizens by conducting the fundamental and vital functions of the election process. The Cuyahoga County Board of Elections has many datasets available to the public on their website [here](https://boe.cuyahogacounty.gov/maps-and-data). We chose to use a government site as opposed to a less credible source in order to ensure we are using clean and accurate data. 
 
-https://boe.cuyahogacounty.gov/maps-and-data
+
 
 ### Questions we hope to answer with the data
 
