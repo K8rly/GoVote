@@ -31,12 +31,12 @@ Party affiliation
 Count - people registered vs people voting (%, mean etc)
 Count - based on generational identification (age ranges)
 
-Generational Age ranges:
-Born 1928-1945 Silent
-Born 1946-1964 Boomers
-Born 1965-1980 Generation X
-Born 1981-1996 Millenials
-Born 1997-2012 Generation Z
+Generational Age ranges:  
+Born 1928-1945 Silent  
+Born 1946-1964 Boomers  
+Born 1965-1980 Generation X  
+Born 1981-1996 Millenials  
+Born 1997-2012 Generation Z  
 
 Which voters voted in all elections vs only key elections (2008/2020 vs 2012/2016)?
 Presidential election vs all elections?
@@ -55,10 +55,10 @@ Splitting dataset: demographic and election info
 
 ### Role Distribution
 
-Circle - Database (Sarah)
-Square - Github (Katterli)
-Triangle - ML Model (Emad)
-X - Technologies used (Leiana)
+Circle - Database (Katterli)  
+Square - Github (Leiana)  
+Triangle - ML Model (Emad)  
+X - Technologies used (Sarah)  
 
 
 ### Communication Protocols
