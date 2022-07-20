@@ -17,8 +17,38 @@ What age group is more likely to vote? More likely to vote Republican or Democra
 
 What precinct is more likely to vote? More likely to vote Republican or Democrat?
 
-
+What city has a higher percentage of voters/highest number of boomers, gen z, etc
 **Prediction: Which age groups/precincts are more likely to vote Republican or Democrat?
+
+
+### Description of the data exploration phase
+Data Cleaning:
+Removed unneeded columns (special elections are not county-wide and were not relevant)
+Removed voter personal information (names and addresses)
+Cleaned columns with prefixes to make ML easier
+Reformatted zip codes to 5 digits for consistency (some were 9 digits)
+
+### Description of the analysis phase
+Data Analysis:
+Divided data into specific dataframes
+Performed counts on total number of voters 
+
+Questions you should be asking yourselves as a team:
+What story do you want you data to tell? We want our data to show relevant voter data 
+
+Do you have a goal?
+
+What kind of message will your dashboard display?
+
+Think of the top 5 things you want users to take away from your dashboard about your data.
+
+The included Schema shows the work that has been completed in PGAdmin
+
+Machine Learning Model (30 points)
+The team members are expected to submit the code for the machine learning model, as well as the following:
+
+
+
 
 ### Additional Questions/Notes
 
@@ -27,6 +57,7 @@ Zip Code
 Election type
 Election year
 Party affiliation
+City
 
 Count - people registered vs people voting (%, mean etc)
 Count - based on generational identification (age ranges)
@@ -55,10 +86,10 @@ Splitting dataset: demographic and election info
 
 ### Role Distribution
 
-Circle - Database (Katterli)  
-Square - Github (Leiana)  
+Circle - Database (Sarah)  
+Square - Github (Katterli)  
 Triangle - ML Model (Emad)  
-X - Technologies used (Sarah)  
+X - Technologies used (Leiana)  
 
 
 ### Communication Protocols
