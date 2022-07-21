@@ -38,7 +38,8 @@ Performed counts on total number of voters for: party affiliation, generational 
 
 ### ERD with Relationships
 
-!["ERD"](Images/ERD_final.png)
+!["ERD"](images/ERD_final.png)
+
 
 
 ### Questions you should be asking yourselves as a team:
@@ -87,10 +88,10 @@ Born 1997-2012 Generation Z
 
 ### Role Distribution
 
-Circle - Database (Katterli)
-Square - Github (Leiana)
-Triangle - ML Model (Emad)
-X - Technologies used (Sarah)
+Circle - Database (Katterli)  
+Square - Github (Leiana)  
+Triangle - ML Model (Emad)  
+X - Technologies used (Sarah)  
 
 
 ### Communication Protocols
