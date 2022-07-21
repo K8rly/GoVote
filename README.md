@@ -15,10 +15,10 @@ The Cuyahoga County Board of Elections serves its citizens by conducting the fun
 
 What age group is more likely to vote? More likely to vote Republican or Democrat?
 
-What precinct is more likely to vote? More likely to vote Republican or Democrat?
+What zip code is more likely to vote? More likely to vote Republican or Democrat?
 
 What city has a higher percentage of voters/highest number of boomers, gen z, etc
-**Prediction: Which age groups/precincts are more likely to vote Republican or Democrat?
+**Prediction: Which age groups/zip codes are more likely to vote Republican or Democrat?
 
 
 ### Description of the data exploration phase
@@ -33,14 +33,20 @@ Data Analysis:
 Divided data into specific dataframes
 Performed counts on total number of voters 
 
-Questions you should be asking yourselves as a team:
-What story do you want you data to tell? We want our data to show relevant voter data 
+### Questions you should be asking yourselves as a team:
+What story do you want your data to tell? We want our data to tell a story about voting trends within Cuyahoga County and how age and city affect these trends.
 
-Do you have a goal?
+Do you have a goal? Our goal is to ultimately develop a predictive tool to showcase voting potential for a given user. 
 
-What kind of message will your dashboard display?
+What kind of message will your dashboard display? We want to show historical voting data for presidential elections over the last 14 years, combined with location mapping to show our vision. 
 
 Think of the top 5 things you want users to take away from your dashboard about your data.
+-
+-
+-
+-
+-
+
 
 The included Schema shows the work that has been completed in PGAdmin
 
