@@ -1,0 +1,202 @@
+
+--Database Integration
+
+--Table creation (4 total) - import csv's from pandas export
+CREATE TABLE voter_info
+(voter_id_org INT,
+ city varchar,
+ ward INT,
+ pct varchar,
+ party varchar,
+ birth_date INT,
+ zip varchar,
+ Source varchar,
+ scd varchar,
+ CONG varchar,
+ HSE varchar,
+ SEN varchar,
+ JUD varchar,
+ CCD varchar
+);
+
+CREATE TABLE gen_cleaned
+(voter_id_org INT,
+ G_11_02_2021 boolean,
+ G_11_03_2020 boolean,
+ G_11_05_2019 boolean,
+ G_11_06_2018 boolean,
+ G_11_07_2017 boolean,
+ G_11_08_2016 boolean,
+ G_11_03_2015 boolean,
+ G_11_04_2014 boolean,
+ G_11_05_2013 boolean,
+ G_11_06_2012 boolean,
+ G_11_08_2011 boolean,
+ G_11_02_2010 boolean,
+ G_11_03_2009 boolean,
+ G_11_04_2008 boolean,
+ G_11_06_2007 boolean,
+ G_11_07_2006 boolean
+);
+
+CREATE TABLE primary_cleaned 
+(voter_id_org INT,
+ P_05_03_2022 varchar,
+ P_09_14_2021 varchar,
+ P_08_03_2021 varchar,
+ P_05_04_2021 varchar,	
+ P_03_17_2020 varchar,	
+ P_09_10_2019 varchar,	
+ P_05_07_2019 varchar,	
+ P_05_08_2018 varchar,
+ P_09_12_2017 varchar,
+ P_05_02_2017 varchar,	
+ P_03_15_2016 varchar,	
+ P_09_08_2015 varchar,
+ P_05_05_2015 varchar,
+ P_05_06_2014 varchar,
+ P_10_01_2013 varchar,
+ P_09_10_2013 varchar,
+ P_05_07_2013 varchar,
+ P_03_06_2012 varchar,
+ P_09_13_2011 varchar,
+ P_05_03_2011 varchar,
+ P_09_07_2010 varchar,
+ P_05_04_2010 varchar,
+ P_09_29_2009 varchar,
+ P_09_08_2009 varchar,
+ P_05_05_2009 varchar,
+ P_03_04_2008 varchar,
+ P_10_02_2007 varchar,
+ P_09_25_2007 varchar,
+ P_09_18_2007 varchar,
+ P_09_11_2007 varchar,
+ P_05_08_2007 varchar,
+ P_05_02_2006 varchar
+ );
+ 
+ CREATE TABLE election_cleaned
+ (voter_id_org INT,
+  P_05_03_2022 varchar,
+  G_11_02_2021 varchar,
+  P_09_14_2021 varchar,
+  P_08_03_2021 varchar,
+  P_05_04_2021 varchar,
+  G_11_03_2020 varchar,
+  P_03_17_2020 varchar,
+  G_11_05_2019 varchar,
+  P_09_10_2019 varchar,
+  P_05_07_2019 varchar,
+  G_11_06_2018 varchar,
+  P_05_08_2018 varchar,
+  G_11_07_2017 varchar,
+  P_09_12_2017 varchar,
+  P_05_02_2017 varchar,
+  G_11_08_2016 varchar,
+  P_03_15_2016 varchar,
+  G_11_03_2015 varchar,
+  P_09_08_2015 varchar,
+  P_05_05_2015 varchar,
+  G_11_04_2014 varchar,
+  P_05_06_2014 varchar,
+  G_11_05_2013 varchar,
+  P_10_01_2013 varchar,
+  P_09_10_2013 varchar,
+  P_05_07_2013 varchar,
+  G_11_06_2012 varchar,
+  P_03_06_2012 varchar,
+  G_11_08_2011 varchar,
+  P_09_13_2011 varchar,
+  P_05_03_2011 varchar,
+  G_11_02_2010 varchar,
+  P_09_07_2010 varchar,
+  P_05_04_2010 varchar,
+  G_11_03_2009 varchar,
+  P_09_29_2009 varchar,
+  P_09_08_2009 varchar,
+  P_05_05_2009 varchar,
+  G_11_04_2008 varchar,
+  P_03_04_2008 varchar,
+  G_11_06_2007 varchar,
+  P_10_02_2007 varchar,
+  P_09_25_2007 varchar,
+  P_09_18_2007 varchar,
+  P_09_11_2007 varchar,
+  P_05_08_2007 varchar,	
+  G_11_07_2006 varchar,
+  P_05_02_2006 varchar
+ );
+
+--used a join to create new table reflecting presidential election voting results
+ SELECT v.voter_id_org,
+						  v.city,
+						  v.party,
+						  v.birth_date,
+						  v.zip,
+						 gc.G_11_03_2020,
+						 gc.G_11_08_2016,
+						 gc.G_11_06_2012,
+						 gc.G_11_04_2008 INTO pres_election
+ FROM voter_info v
+ JOIN gen_cleaned gc using ("voter_id_org");
+
+ SELECT v.voter_id_org,
+						  v.city,
+						  v.party,
+						  v.birth_date,
+						  v.zip,
+						 pc.p_03_17_2020,
+						 pc.p_03_15_2016,
+						 pc.p_03_06_2012,
+						 pc.p_03_04_2008 INTO primary_pres_election
+ FROM voter_info v
+ JOIN primary_cleaned pc using ("voter_id_org");
+
+
+--counting the votes for 2016 vs 2020 election
+SELECT COUNT (G_11_08_2016)
+FROM gen_cleaned
+WHERE (G_11_08_2016) = TRUE;
+        --GROUP BY (G_11_03_2020) --523,991
+SELECT COUNT (G_11_03_2020)
+FROM gen_cleaned
+WHERE (G_11_03_2020) = TRUE;
+        --GROUP BY (G_11_03_2020) --608,388
+
+
+--party affiliation count
+SELECT party,COUNT(*)
+FROM voter_info
+GROUP BY party
+ORDER BY COUNT(*) DESC;
+
+SELECT * FROM voter_info;
+
+
+--Generation Age brackets total count (also used to reflect 2020 election voters by category)
+SELECT SUM(CASE WHEN birth_date BETWEEN 1928 AND 1945 THEN 1 ELSE 0 END) AS Silent,
+    SUM(CASE WHEN birth_date BETWEEN 1946 AND 1964 THEN 1 ELSE 0 END) AS Boomer,
+	SUM(CASE WHEN birth_date BETWEEN 1965 AND 1980 THEN 1 ELSE 0 END) AS GenX,
+	SUM(CASE WHEN birth_date BETWEEN 1981 AND 1996 THEN 1 ELSE 0 END) AS Millennials,
+    SUM(CASE WHEN birth_date BETWEEN 1997 AND 2012 THEN 1 ELSE 0 END) AS GenZ
+ FROM pres_election
+ WHERE G_11_03_2020 = True;
+
+
+ --Join primary and general election for presidential election years 
+ SELECT p.voter_id_org as "Voter ID",
+						  p.city as "City",
+						  p.party as "Party",
+						  p.birth_date as "Birth Year",
+						  p.zip as "Zip Code",
+						  p.p_03_17_2020 as "2020 Primary Election",
+						  p.p_03_15_2016 as "2016 Primary Election",
+						  p.p_03_06_2012 as "2012 Primary Election",
+						  p.p_03_04_2008 as "2008 Primary Election",
+						  gc.G_11_03_2020 as "2020 General Election",
+						 gc.G_11_08_2016 as "2016 General Election",
+						 gc.G_11_06_2012 as "2012 General Election",
+						 gc.G_11_04_2008 as "2008 General Election"
+							 INTO prim_gen_joined
+ FROM primary_info p
+ JOIN gen_cleaned gc using ("voter_id_org");
