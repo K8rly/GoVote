@@ -27,13 +27,13 @@
 ### Presentation
 
 #### Topic
-Analyzing voter registration and election results in Cuyahoga County by Age and Zip Code in order to determine trends in voting patterns
+ - Analyzing voter registration and election results in Cuyahoga County by Age and Zip Code in order to determine trends in voting patterns
 
 #### Reason we selected the topic
-The United States is experiencing high levels of political turmoil, making this topic extremely relevant. Our group would like to identify potential factors contributing to voting trends within our shared home county, and analyze voter data to relate geographical and generational identification to voting patterns. In analyzing this data we hope to predict which party affiliation groups are more likely to vote for based on these features.
+ - The United States is experiencing high levels of political turmoil, making this topic extremely relevant. Our group would like to identify potential factors contributing to voting trends within our shared home county, and analyze voter data to relate geographical and generational identification to voting patterns. In analyzing this data we hope to predict which party affiliation groups are more likely to vote for based on these features.
 
 #### Description of the source of data
-The Cuyahoga County Board of Elections serves its citizens by conducting the fundamental and vital functions of the election process. The Cuyahoga County Board of Elections has many datasets available to the public on their website [here](https://boe.cuyahogacounty.gov/maps-and-data). We chose to use a government site as opposed to a less credible source in order to ensure we are using clean and accurate data. 
+ - The Cuyahoga County Board of Elections serves its citizens by conducting the fundamental and vital functions of the election process. The Cuyahoga County Board of Elections has many datasets available to the public on their website [here](https://boe.cuyahogacounty.gov/maps-and-data). We chose to use a government site as opposed to a less credible source in order to ensure we are using clean and accurate data. 
 
 
 ### Description of the Data Exploration Phase
@@ -107,8 +107,12 @@ Description of preliminary feature engineering and preliminary feature selection
  - 
 
 Description of how data was split into training and testing sets
+<<<<<<< HEAD
 
+=======
+>>>>>>> 436ad33478090f1d067e3fd43020ceaf90ed1e37
 
+ 
 Explanation of model choice, including limitations and benefits
  - We felt using Logistic Regression made sense based on our dataset
  - Using Logistic Regression could potentially limit us, but we wanted to showcase the data using a baseline model first
@@ -134,7 +138,7 @@ Includes at least one connection string
 Please reference ![GoVote_schema](https://github.com/K8rly/GoVote/blob/main/GoVote_schema) showing work that has been completed in PGAdmin and Pandas
 
 
-### ERD
+### Entity Relationship Diagram (ERD)
 
 <p align="center">
   <img 
