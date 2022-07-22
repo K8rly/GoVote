@@ -107,10 +107,6 @@ Description of preliminary feature engineering and preliminary feature selection
  - 
 
 Description of how data was split into training and testing sets
-<<<<<<< HEAD
-
-=======
->>>>>>> 436ad33478090f1d067e3fd43020ceaf90ed1e37
 
  
 Explanation of model choice, including limitations and benefits
