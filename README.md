@@ -10,11 +10,11 @@
 
 
 ## Table of Contents
-1. [Presentation](###Presentation)
-2. [Description of the Data Exploration Phase](###Description_of_the_Data_Exploration_Phase)
-3. [Description of the Analysis Phase](###Description_of_the_Analysis_Phase)
+1. [Presentation](#Presentation)
+2. [Description of the Data Exploration Phase](#DescriptionoftheDataExplorationPhase)
+3. [Description of the Analysis Phase](###DescriptionoftheAnalysisPhase)
 4. [Team Questions](###Team_Questions)
-5. [Communication Protocols](###Communication_Protocols)
+5. [Communication Protocols](###CommunicationProtocols)
 6. [Role Distribution](###Role_Distribution)
 7. [Machine Learning Model](###Machine_Learning_Model)
 8. [Database Integration](####Database_Integration)
@@ -23,22 +23,16 @@
 11. [Generation Breakdown](###Generation_Breakdown)
 12. [Dashboard](###Dashboard)
 
-## Example
-## Example2
-## Third Example
-## Fourth Example
-## Fifth Example
-## Sixth Example
 
 ### Presentation
 
-##### Topic
+#### Topic
 Analyzing voter registration and election results in Cuyahoga County by Age and Zip Code in order to determine trends in voting patterns
 
-##### Reason we selected the topic
+#### Reason we selected the topic
 The United States is experiencing high levels of political turmoil, making this topic extremely relevant. Our group would like to identify potential factors contributing to voting trends within our shared home county, and analyze voter data to relate geographical and generational identification to voting patterns. In analyzing this data we hope to predict which party affiliation groups are more likely to vote for based on these features.
 
-##### Description of the source of data
+#### Description of the source of data
 The Cuyahoga County Board of Elections serves its citizens by conducting the fundamental and vital functions of the election process. The Cuyahoga County Board of Elections has many datasets available to the public on their website [here](https://boe.cuyahogacounty.gov/maps-and-data). We chose to use a government site as opposed to a less credible source in order to ensure we are using clean and accurate data. 
 
 
@@ -74,15 +68,12 @@ Think of the top 5 things you want users to take away from your dashboard about 
 - A sense of the voting trends all over Cuyahoga County and party affiliation in the last 4 primary elections
 - A sense of the voting trends all over Cuyahoga County for the last 4 presidential elections
 
-##### Questions We Hope to Answer with the Data
+#### Questions We Hope to Answer with the Data
 
-1. What age group is more likely to vote? More likely to vote Republican or Democrat?
-
-2. What zip code is more likely to vote? More likely to vote Republican or Democrat?
-
-3. What geographical area has a higher percentage of voters/highest number of boomers, gen z, etc
-
-4. **Prediction: Which age groups/zip codes are more likely to vote Republican or Democrat?
+ - What age group is more likely to vote? More likely to vote Republican or Democrat?
+ - What zip code is more likely to vote? More likely to vote Republican or Democrat?
+ - What geographical area has a higher percentage of voters/highest number of boomers, gen z, etc
+ - **Prediction: Which age groups/zip codes are more likely to vote Republican or Democrat?
 
 
 ### Communication Protocols
@@ -114,8 +105,10 @@ Description of preliminary feature engineering and preliminary feature selection
  - Used birth year and zip code as features in first round of ML to help achieve answers to our questions on how age and location affected voting. *Our group decided to use zip code as opposed to city after viewing a map of the data in Tableau
  - Used generational buckets and party affiliation as supplemental features to better fit ML model
  - 
+
 Description of how data was split into training and testing sets
  -
+
 Explanation of model choice, including limitations and benefits
  - We felt using Logistic Regression made sense based on our dataset
  - Using Logistic Regression could potentially limit us, but we wanted to showcase the data using a baseline model first
@@ -126,15 +119,15 @@ Explanation of model choice, including limitations and benefits
 ### Database Integration
 
 Database stores static data for use during the project
- - PgAdmin/SQL
+ - PgAdmin/SQL  
 Database interfaces with the project in some format
- - Exporting our tables to csv files after joining
+ - Exporting our tables to csv files after joining  
 Includes at least two tables
- - We created 5 total tables and ultimately joined the data into one clean, abbreviated table
+ - We created 5 total tables and ultimately joined the data into one clean, abbreviated table  
 Includes at least one join using the database language
- - All joins took place in PgAdmin utilizing SQL
+ - All joins took place in PgAdmin utilizing SQL  
 Includes at least one connection string
- - Exporting our tables to csv files after joining 
+ - Exporting our tables to csv files after joining  
 
 
 ### Schema
@@ -143,12 +136,10 @@ Please reference ![GoVote_schema](https://github.com/K8rly/GoVote/blob/main/GoVo
 
 ### ERD
 
-!["ERD"](images/ERD_final.png)
-
 <p align="center">
   <img 
-    width="300"
-    height="300"
+    width="500"
+    height="500"
     src="images/ERD_final.png"
   >
 </p>
@@ -168,17 +159,17 @@ Birth Year    | Generational Group
 
 ### Dashboard
 
-##### Google Slides Link [Here](https://docs.google.com/presentation/d/1MM8PHN10rRyozVNqGxoPIhzx3RIcxcASvziTmO43SMM/edit?usp=sharing)
+#### Google Slides Link [Here](https://docs.google.com/presentation/d/1MM8PHN10rRyozVNqGxoPIhzx3RIcxcASvziTmO43SMM/edit?usp=sharing)
 
 
-##### Description of Tools Used in Dashboard
+#### Description of Tools Used in Dashboard
 
  - Tableau - utilized to display the voting data results based on the generational age brackets, reflecting voting patterns based on age and area of residence, will include visuals such as mapping and graphs
 
  - Google Slides - utilized to tell our data story start to finish while providing additional graphics
 
 
-##### Description of Interactive Elements
+#### Description of Interactive Elements
 
  - Application that will allow users to enter their year of birth and select a zip code from the drop down to create a prediction of how they will vote
 
