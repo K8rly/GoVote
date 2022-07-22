@@ -1,4 +1,4 @@
-# GoVOte
+# GoVOTE
 
 <p align="center">
   <img 
@@ -11,32 +11,32 @@
 
 ## Table of Contents
 1. [Presentation](#Presentation)
-2. [Description of the Data Exploration Phase](#DescriptionoftheDataExplorationPhase)
-3. [Description of the Analysis Phase](###DescriptionoftheAnalysisPhase)
-4. [Team Questions](###Team_Questions)
-5. [Communication Protocols](###CommunicationProtocols)
-6. [Role Distribution](###Role_Distribution)
-7. [Machine Learning Model](###Machine_Learning_Model)
-8. [Database Integration](####Database_Integration)
-9. [Schema](###Schema)
-10. [ERD](###ERD)
-11. [Generation Breakdown](###Generation_Breakdown)
-12. [Dashboard](###Dashboard)
+2. [Description of the Data Exploration Phase](#Description-of-the-Data-Exploration-Phase)
+3. [Description of the Analysis Phase](#Description-of-the-Analysis-Phase)
+4. [Team Questions](#Team-Questions)
+5. [Communication Protocols](#Communication-Protocols)
+6. [Role Distribution](#Role-Distribution)
+7. [Machine Learning Model](#Machine-Learning-Model)
+8. [Database Integration](#Database-Integration)
+9. [Schema](#Schema)
+10. [ERD](#ERD)
+11. [Generation Breakdown](#Generation-Breakdown)
+12. [Dashboard](#Dashboard)
 
 
 ### Presentation
 
 #### Topic
-Analyzing voter registration and election results in Cuyahoga County by Age and Zip Code in order to determine trends in voting patterns
+ - Analyzing voter registration and election results in Cuyahoga County by Age and Zip Code in order to determine trends in voting patterns
 
 #### Reason we selected the topic
-The United States is experiencing high levels of political turmoil, making this topic extremely relevant. Our group would like to identify potential factors contributing to voting trends within our shared home county, and analyze voter data to relate geographical and generational identification to voting patterns. In analyzing this data we hope to predict which party affiliation groups are more likely to vote for based on these features.
+ - The United States is experiencing high levels of political turmoil, making this topic extremely relevant. Our group would like to identify potential factors contributing to voting trends within our shared home county, and analyze voter data to relate geographical and generational identification to voting patterns. In analyzing this data we hope to predict which party affiliation groups are more likely to vote for based on these features.
 
 #### Description of the source of data
-The Cuyahoga County Board of Elections serves its citizens by conducting the fundamental and vital functions of the election process. The Cuyahoga County Board of Elections has many datasets available to the public on their website [here](https://boe.cuyahogacounty.gov/maps-and-data). We chose to use a government site as opposed to a less credible source in order to ensure we are using clean and accurate data. 
+ - The Cuyahoga County Board of Elections serves its citizens by conducting the fundamental and vital functions of the election process. The Cuyahoga County Board of Elections has many datasets available to the public on their website [here](https://boe.cuyahogacounty.gov/maps-and-data). We chose to use a government site as opposed to a less credible source in order to ensure we are using clean and accurate data. 
 
 
-### Description_of_the_Data_Exploration_Phase
+### Description of the Data Exploration Phase
  - We reviewed our dataset in excel and contacted the Board of Elections to explain the meaning of columns and their data
  - We determined which data was most relevant to our questions and which data wouldn't add value
  - We updated null values in the dataset to "0" (did not vote)
@@ -107,8 +107,8 @@ Description of preliminary feature engineering and preliminary feature selection
  - 
 
 Description of how data was split into training and testing sets
- -
 
+ 
 Explanation of model choice, including limitations and benefits
  - We felt using Logistic Regression made sense based on our dataset
  - Using Logistic Regression could potentially limit us, but we wanted to showcase the data using a baseline model first
@@ -134,7 +134,7 @@ Includes at least one connection string
 Please reference ![GoVote_schema](https://github.com/K8rly/GoVote/blob/main/GoVote_schema) showing work that has been completed in PGAdmin and Pandas
 
 
-### ERD
+### Entity Relationship Diagram (ERD)
 
 <p align="center">
   <img 
