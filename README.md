@@ -130,7 +130,7 @@ Includes at least one connection string: Exporting our tables to csv files after
 
 
 ### Schema
-Please reference ![GoVote_schema](https://github.com/K8rly/GoVote/blob/main/GoVote_schema) showing work that has been completed in PGAdmin and Pandas
+Please reference [GoVote_schema](https://github.com/K8rly/GoVote/blob/main/GoVote_schema) showing work that has been completed in PGAdmin and Pandas
 
 
 ### Entity Relationship Diagram (ERD)
