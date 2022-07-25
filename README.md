@@ -118,20 +118,15 @@ Explanation of model choice, including limitations and benefits
 
 ### Database Integration
 
-Database stores static data for use during the project
- - PgAdmin/SQL  
- 
-Database interfaces with the project in some format
- - Exporting our tables to csv files after joining  
- 
-Includes at least two tables
- - We created 5 total tables and ultimately joined the data into one clean, abbreviated table  
- 
-Includes at least one join using the database language
- - All joins took place in PgAdmin utilizing SQL  
- 
-Includes at least one connection string
- - Exporting our tables to csv files after joining  
+Database stores static data for use during the project: PgAdmin/SQL
+
+Database interfaces with the project in some format: Exporting our tables to csv files after joining
+
+Includes at least two tables: We created 5 total tables and ultimately joined the data into one clean, abbreviated table
+
+Includes at least one join using the database language: All joins took place in PgAdmin utilizing SQL
+
+Includes at least one connection string: Exporting our tables to csv files after joining  
 
 
 ### Schema
