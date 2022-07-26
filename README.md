@@ -53,7 +53,7 @@
 ### Team Questions
 
 What story do you want your data to tell? 
- - We want our data to tell a story about voting trends within Cuyahoga County and how age and city affect these trends. We also want to highlight different generational groups in order to show differences between not only age, but entire generations.
+ - We want our data to tell a story about voting trends within Cuyahoga County and how age and city affect these trends. We also want to highlight different generational groups in order to show differences between not only age, but entire generations. 
 
 Do you have a goal? 
  - Our goal is to ultimately develop a predictive tool to showcase voting potential for a given user. We also hope to paint a picture of current voting trends within a user's geographic location in order to help the user personally relate to the project and their own community's voting patterns.
@@ -74,7 +74,7 @@ Think of the top 5 things you want users to take away from your dashboard about 
  - What zip code is more likely to vote? More likely to vote Republican or Democrat?
  - What geographical area has a higher percentage of voters/highest number of boomers, gen z, etc
  - **Prediction: Which age groups/zip codes are more likely to vote Republican or Democrat?
-
+ - How many members of NOPARTY voted vs did not vote?
 
 ### Communication Protocols
 
@@ -98,6 +98,8 @@ Description of preliminary data preprocessing
  - Reformatted zip codes to 5 digits for consistency (some were 9 digits)
  - Changed boolean values to "0" and "1"
  - Renamed Columns
+ - Cleaned up city names for consistency (Hts ->> Heights)
+ - Removed ages before 1st generational bin (1927 and earlier)
  - Organized birth year into buckets to show generational groups
  - One Hot coding
 
@@ -120,12 +122,16 @@ Explanation of model choice, including limitations and benefits
 
 Database stores static data for use during the project
  - PgAdmin/SQL  
+
 Database interfaces with the project in some format
  - Exporting our tables to csv files after joining  
+
 Includes at least two tables
  - We created 5 total tables and ultimately joined the data into one clean, abbreviated table  
+
 Includes at least one join using the database language
  - All joins took place in PgAdmin utilizing SQL  
+
 Includes at least one connection string
  - Exporting our tables to csv files after joining  
 
@@ -164,12 +170,12 @@ Birth Year    | Generational Group
 
 #### Description of Tools Used in Dashboard
 
- - Tableau - utilized to display the voting data results based on the generational age brackets, reflecting voting patterns based on age and area of residence, will include visuals such as mapping and graphs
+ - Tableau - utilized to display the voting data results based on the generational age brackets, reflecting voting patterns based on age and area of residence, will include visuals such as mapping and graphs. Performed some cleaning in Tableau once we tried mapping.
 
  - Google Slides - utilized to tell our data story start to finish while providing additional graphics
 
 
 #### Description of Interactive Elements
 
- - Application that will allow users to enter their year of birth and select a zip code from the drop down to create a prediction of how they will vote
+ - Application that will allow users to enter their year of birth and select a zip code from the drop down to create a prediction of how they will . Users can select city, zip code, and city boundary. 
 
