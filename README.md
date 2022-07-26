@@ -106,17 +106,18 @@ Description of preliminary data preprocessing
 Description of preliminary feature engineering and preliminary feature selection, including the decision-making process
  - Used birth year and zip code as features in first round of ML to help achieve answers to our questions on how age and location affected voting. *Our group decided to use zip code as opposed to city after viewing a map of the data in Tableau
  - Used generational buckets and party affiliation as supplemental features to better fit ML model
- - 
 
 Description of how data was split into training and testing sets
  - Split data into training and testing sets (80/20)
  - Assigned data to x and y for each of the four presidential elections (2008, 2012, 2016, 2020)
  - Used One hot coding to establish generational buckets (Silent, Boomers, Generation X, Millennials, Generation Z)
 
-'X20_train, X20_test, y20_train, y20_test = train_test_split(X20, y20, random_state=1)
+```
+X20_train, X20_test, y20_train, y20_test = train_test_split(X20, y20, random_state=1)
 classifier = LogisticRegression()
 classifier
-classifier.fit(X20_train, y20_train)'
+classifier.fit(X20_train, y20_train)
+```
  
 Explanation of model choice, including limitations and benefits
  - We felt using Logistic Regression made sense given our dataset and would ensure we could organize our web app efficiently
