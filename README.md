@@ -109,13 +109,20 @@ Description of preliminary feature engineering and preliminary feature selection
  - 
 
 Description of how data was split into training and testing sets
+ - Split data into training and testing sets (80/20)
+ - Assigned data to x and y for each of the four presidential elections (2008, 2012, 2016, 2020)
+ - Used One hot coding to establish generational buckets (Silent, Boomers, Generation X, Millennials, Generation Z)
 
+'X20_train, X20_test, y20_train, y20_test = train_test_split(X20, y20, random_state=1)
+classifier = LogisticRegression()
+classifier
+classifier.fit(X20_train, y20_train)'
  
 Explanation of model choice, including limitations and benefits
- - We felt using Logistic Regression made sense based on our dataset
+ - We felt using Logistic Regression made sense given our dataset and would ensure we could organize our web app efficiently
  - Using Logistic Regression could potentially limit us, but we wanted to showcase the data using a baseline model first
  - A benefit to this model is simplicity as well as the model working well to showcase our data with a web app
- - We wanted to use Random Forest as an alternative/additional model to achieve a higher rate of accuracy
+ - We used Random Forest Classifier and Gradient Boost Classifier as alternative/additional models to achieve a higher rate of accuracy
 
 
 ### Database Integration
