@@ -72,6 +72,30 @@ Data Cleaning and Analysis
 
 Pandas was utilized to clean data while completing an exploratory analysis on different aspects of the voter dataset. We used OnehotEncoding to determine party loyalty or changes to prepare for ML. We continued to clean our data once in Tableau as mapping illustrated new inconsistencies and outliers that were not previously apparent.
 
+ - Review data to determine non-viability of specific column information 
+ - Determine required data to maximize utilization of dataset
+ - Review birth_date information to place in categorical sections
+ - Determine overall effect on outcome when removing entire population based on birth year
+ - Determine appropriate DataFrames to export to PgAdmin (csv)
+
+
+Description of data preprocessing
+ - Dropped unneeded columns (i.e voter demographic info, special election info, voting source)
+ - Set index to voter_id_org
+ - Removed voter personal information (names and addresses)
+ - Cleaned columns with voter type prefixes to make ML easier
+ - Reformatted zip codes to 5 digits for consistency (some were 9 digits)
+ - Changed boolean values to "0" and "1"
+ - Cleaned up city names for consistency (Hts ->> Heights)
+ - Dropped voter information with birth years prior to first generational bucket (1927 and earlier)
+ - Organized birth year into buckets to show generational groups
+ - Removed Generation Z and Millennials data as younger generations were unable to vote in earlier elections
+ - One Hot coding
+ - Renamed Columns
+ - Hyper parameter tuning to find optimal classifier
+ - Grid Search CV
+ - Voting classifier (soft)
+
 Database Storage
  - We used PgAdmin (SQL) as our database, while integrating the data into Tableau for visual effects.
 
@@ -79,11 +103,9 @@ Database Storage
  voting record primary election (OneHotCoding - party affiliation D/F/N) - issues only ballot if non-partisan(N) voting record - general election with voter ID (Y = 1, Null = 0)
 
 Machine Learning
-
 SciKitLearn is the ML library we used to create a classification model. Our training and testing set up is 80/20.
 
 Dashboard
-
 We will be using Tableau to display our findings, as well as Google slides for our overall presentation. Our ultimate goal is to create an interactive web app where users
 
 
@@ -107,20 +129,8 @@ X - Technologies used (Emad)
 ### Machine Learning Model
 
 Description of data preprocessing
- - Removed unneeded columns (special elections are not county-wide and were not relevant)
- - Removed voter personal information (names and addresses)
- - Cleaned columns with prefixes to make ML easier
- - Reformatted zip codes to 5 digits for consistency (some were 9 digits)
- - Changed boolean values to "0" and "1"
- - Cleaned up city names for consistency (Hts ->> Heights)
- - Removed ages before 1st generational bin (1927 and earlier)
- - Organized birth year into buckets to show generational groups
- - Removed Generation Z and Millennials data as younger generations were unable to vote in earlier elections
- - One Hot coding
- - Renamed Columns
- - Hyper parameter tuning to find optimal classifier
- - Grid Search CV
- - Voting classifier (soft)
+
+Dataset was scrutinized for relevant information and complete voter info prior to first run through ML model, and again after as new information was observed in Pandas, PgAdmin, and Tableau. Steps above (see Technologies section) were taken to ensure data was clean and appropriate to answer our questions.
 
 Description of feature engineering and preliminary feature selection, including the decision-making process
  - Used birth year and zip code as features in first round of ML to help achieve answers to our questions on how age and location affected voting. *Our group decided to use zip code as opposed to city after viewing a map of the data in Tableau
@@ -208,6 +218,8 @@ Images from the initial analysis
 ![Median Voter Birth Year by Zip Code](images/MedianBirthYearbyZip.png)
 
 *Color range is light to dark as birth year increases
+
+![Generational Groups and Voting by Election Year](images/voters_by_election_year_and_bucket.png)
 
 Data (images or report) from the machine learning task
 
