@@ -139,11 +139,10 @@ classifier.fit(X20_train, y20_train)
 ```
  
 Explanation of model choice, including limitations and benefits
- - We felt using Logistic Regression made sense given our dataset and would optimize our web app
- - Using Logistic Regression could potentially limit us, but we wanted to showcase the data using a baseline model first
- - A benefit to this model is simplicity as well as the model working well to showcase our data with a web app
+ - We felt using Logistic Regression made sense given our dataset and in order to optimize our web app. Using Logistic Regression could potentially limit us, but we wanted to showcase the data using a baseline model first. A benefit to this model is simplicity as well as the model working well to showcase our data with a web app
  - We used Random Forest Classifier and Gradient Boost Classifier as alternative/additional models to achieve a higher rate of accuracy after trying Logistic Regression
  - Played with features and added parameters to avoid overfitting
+ - Adopted Grid Search CV as a way to increase accuracy score and perform hyper parameter tuning
 
 Explanation of changes in model choice
  - After an initial accuracy rate of ----% while running the Logistic Regression Classifer we added Gradient Boost Classifer and Random Forest Classifier models to increase accuracy. 
