@@ -221,6 +221,7 @@ Data (images or report) from the machine learning task
 *Color range is light to dark as birth year increases
 
 
+
 ![Generational Groups and Voting by Election Year](images/voters_by_election_year_and_bucket.png)
 
 *Color assigned by generational group
