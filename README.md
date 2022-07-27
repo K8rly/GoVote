@@ -214,14 +214,16 @@ Birth Year    | Generational Group
 #### Google Slides Link [Here](https://docs.google.com/presentation/d/1MM8PHN10rRyozVNqGxoPIhzx3RIcxcASvziTmO43SMM/edit?usp=sharing)
 
 Images from the initial analysis
+Data (images or report) from the machine learning task
 
 ![Median Voter Birth Year by Zip Code](images/MedianBirthYearbyZip.png)
 
 *Color range is light to dark as birth year increases
 
+
 ![Generational Groups and Voting by Election Year](images/voters_by_election_year_and_bucket.png)
 
-Data (images or report) from the machine learning task
+*Color assigned by generational group
 
 
 #### Description of Tools Used in Dashboard
