@@ -131,10 +131,12 @@ Description of how data was split into training and testing sets
  - Assigned data to x and y for each of the four presidential elections (2008, 2012, 2016, 2020)
  - Used One hot coding to establish generational buckets (Silent, Boomers, Generation X, Millennials, Generation Z)
 
-'X20_train, X20_test, y20_train, y20_test = train_test_split(X20, y20, random_state=1)
+```
+X20_train, X20_test, y20_train, y20_test = train_test_split(X20, y20, random_state=1)
 classifier = LogisticRegression()
 classifier
-classifier.fit(X20_train, y20_train)'
+classifier.fit(X20_train, y20_train)
+```
  
 Explanation of model choice, including limitations and benefits
  - We felt using Logistic Regression made sense given our dataset and would optimize our web app
