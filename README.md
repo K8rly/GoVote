@@ -102,7 +102,7 @@ Database Storage
  - We used SQL to split our data into additional tables and then join relevant information to form a final, clean datset. We removed voter demographics 
  voting record primary election (OneHotCoding - party affiliation D/F/N) - issues only ballot if non-partisan(N) voting record - general election with voter ID (Y = 1, Null = 0)
 
-Machine Learning
+Machine Learning  
 SciKitLearn is the ML library we used to create a classification model. Our training and testing set up is 80/20.
 
 Dashboard
@@ -128,6 +128,10 @@ X - Technologies used (Emad)
 
 ### Machine Learning Model
 
+What is our model predicting? 
+
+We are predicting registered voters' likeliness to vote in the 2020 General Election, based on features in the dataset.
+
 Description of data preprocessing
 
 Dataset was scrutinized for relevant information and complete voter info prior to first run through ML model, and again after as new information was observed in Pandas, PgAdmin, and Tableau. Steps above (see Technologies section) were taken to ensure data was clean and appropriate to answer our questions.
@@ -135,10 +139,11 @@ Dataset was scrutinized for relevant information and complete voter info prior t
 Description of feature engineering and preliminary feature selection, including the decision-making process
  - Used birth year and zip code as features in first round of ML to help achieve answers to our questions on how age and location affected voting. *Our group decided to use zip code as opposed to city after viewing a map of the data in Tableau
  - Used generational buckets and party affiliation as supplemental features to better fit ML model
+ - Previous voting history was also used as an indicator of potential to vote.
 
 Description of how data was split into training and testing sets
  - Split data into training and testing sets (80/20)
- - Assigned data to x and y for each of the four presidential elections (2008, 2012, 2016, 2020)
+ - * Assigned general election to x (as the target) and features to y for each of the four presidential elections (2008, 2012, 2016, 2020)
  - Used One hot coding to establish generational buckets (Silent, Boomers, Generation X, Millennials, Generation Z)
 
 ```
@@ -151,17 +156,19 @@ classifier.fit(X20_train, y20_train)
 Explanation of model choice, including limitations and benefits
  - We felt using Logistic Regression made sense given our dataset and in order to optimize our web app. Using Logistic Regression could potentially limit us, but we wanted to showcase the data using a baseline model first. A benefit to this model is simplicity as well as the model working well to showcase our data with a web app
  - We used Random Forest Classifier and Gradient Boost Classifier as alternative/additional models to achieve a higher rate of accuracy after trying Logistic Regression
- - Played with features and added parameters to avoid overfitting
+ - Accuracy score analysis indicated that Gradient Boost Classifier had the best fit  for the training data and the best match on the test data. 
  - Adopted Grid Search CV as a way to increase accuracy score and perform hyper parameter tuning
 
 Explanation of changes in model choice
- - After an initial accuracy rate of ----% while running the Logistic Regression Classifer we added Gradient Boost Classifer and Random Forest Classifier models to increase accuracy. 
+ - After an initial accuracy rate of 77% while running the Logistic Regression Classifer we added Gradient Boost Classifer and Random Forest Classifier models to increase accuracy. 
 
 Description of how we have trained the model thus far, and any additional training that will take place
-
+ - We identified that using all the voter data was not an accurate representation of the voters eligible to vote in a given election. For example, a voter born in 2002 is listed as a registered voter; however, they could not have voted in the 2008 election.  We had to further clean the data and only look at voters that were a.) old enough to vote in a given election and b.) had actually registered prior to the election date. 
+ - Using the cleaned data and the Gradient Boost classifier, we used the Grid Search CV, cross validation model to evaluate the performance of the model and to determine whether non-standard hyperparameters would result in a better fit. 
+ - Modifiying the number of estimators, the learning rate and the max_depth, the revised model resulted in an accuracy score of 88%. 
 
 Description of current accuracy score
-
+ - The current accuracy score of the Gradient Boost Classifier model is 88%.
 
 ### Database Integration
 
