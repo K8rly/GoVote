@@ -95,8 +95,8 @@ Description of data preprocessing
  - Dropped voter information with birth years prior to first generational bucket (1927 and earlier)
  - Organized birth year into buckets to show generational groups
  - Removed Generation Z and Millennials data as younger generations were unable to vote in earlier elections
- - One Hot coding
- - Renamed Columns
+ - One Hot coding (party affiliation)
+ - Renamed Columns and Removed irrelevant information
  - Hyper parameter tuning to find optimal classifier
  - Grid Search CV
  - Voting classifier (soft)
@@ -104,8 +104,6 @@ Description of data preprocessing
 Database Storage
  - We used PgAdmin (SQL) as our database, while integrating the data into Tableau for visual effects.
 
- - We used SQL to split our data into additional tables and then join relevant information to form a final, clean datset. We removed voter demographics 
-  voting record primary election (OneHotCoding - party affiliation D/F/N) - issues only ballot if non-partisan(N) voting record - general election with voter ID (Y = 1, Null = 0)
 
  ![SQL Code Used to Join Tables and Rename Columns](images/go_vote_code.png)
 
@@ -167,7 +165,7 @@ Explanation of changes in model choice
  - After an initial accuracy rate of 77% while running the Logistic Regression Classifer we added Gradient Boost Classifer and Random Forest Classifier models to increase accuracy. 
 
 
-Classifiers
+                    Classifiers
 <p align="left">                                                                           
   <img 
     width="500"
@@ -178,7 +176,7 @@ Classifiers
 
 
 
-Confusion Matrices
+                                                                      Confusion Matrices
 <p align="right">
   <img 
     width="500"
@@ -219,7 +217,7 @@ Includes at least one connection string
   <img 
     width="500"
     height="500"
-    src="images/go_vote_table_creation.png"
+    src="images/slides_db.png"
   >
 </p>
 
