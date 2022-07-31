@@ -29,17 +29,21 @@
 #### Topic
   Analyzing voter registration and election results in Cuyahoga County by Age and Zip Code in order to determine trends in voting patterns
 
+
 #### Reason we selected the topic
   The United States is experiencing high levels of political turmoil, making this topic extremely relevant. Our group would like to identify potential factors contributing to voting trends within our shared home county, and analyze voter data to relate geographical and generational identification to voting patterns. In analyzing this data we hope to predict which party affiliation groups are more likely to vote for based on these features.
 
+
 #### Description of the source of data
   The Cuyahoga County Board of Elections serves its citizens by conducting the fundamental and vital functions of the election process. The Cuyahoga County Board of Elections has many datasets available to the public on their website [here](https://boe.cuyahogacounty.gov/maps-and-data). We chose to use a government site as opposed to a less credible source in order to ensure we are using clean and accurate data. 
+
 
 ### Description of the Data Exploration Phase
  - We reviewed our dataset in excel and contacted the Board of Elections to explain the meaning of columns and their data
  - We determined which data was most relevant to our questions and which data wouldn't add value
  - We updated null values in the dataset to "0" (did not vote)
  - After processing data in PGadmin, we noticed we wanted additional columns within the same table. We added another join to capture additional election data and organize everything.
+
 
 ### Description of the Analysis Phase
  - Divided data into specific dataframes
@@ -65,6 +69,7 @@ Think of the top 5 things you want users to take away from your dashboard about 
 - Prediction of the user's voting party affiliation in the next presidential election
 - A sense of the voting trends all over Cuyahoga County and party affiliation in the last 4 primary elections
 - A sense of the voting trends all over Cuyahoga County for the last 4 presidential elections
+
 
 ### Technologies, Languages, Tools, and Algorithms Used throughout the Project
 
@@ -100,13 +105,10 @@ Database Storage
  - We used PgAdmin (SQL) as our database, while integrating the data into Tableau for visual effects.
 
  - We used SQL to split our data into additional tables and then join relevant information to form a final, clean datset. We removed voter demographics 
- voting record primary election (OneHotCoding - party affiliation D/F/N) - issues only ballot if non-partisan(N) voting record - general election with voter ID (Y = 1, Null = 0)
+  voting record primary election (OneHotCoding - party affiliation D/F/N) - issues only ballot if non-partisan(N) voting record - general election with voter ID (Y = 1, Null = 0)
 
-Machine Learning  
-SciKitLearn is the ML library we used to create a classification model. Our training and testing set up is 80/20.
+ ![SQL Code Used to Join Tables and Rename Columns](images/go_vote_code.png)
 
-Dashboard
-We will be using Tableau to display our findings, as well as Google slides for our overall presentation. Our ultimate goal is to create an interactive web app where users
 
 
 #### Questions We Hope to Answer with the Data
@@ -142,6 +144,8 @@ Description of feature engineering and preliminary feature selection, including 
  - Previous voting history was also used as an indicator of potential to vote.
 
 Description of how data was split into training and testing sets
+
+ - SciKitLearn is the ML library we used to create a classification model
  - Split data into training and testing sets (80/20)
  - * Assigned general election to x (as the target) and features to y for each of the four presidential elections (2008, 2012, 2016, 2020)
  - Used One hot coding to establish generational buckets (Silent, Boomers, Generation X, Millennials, Generation Z)
@@ -162,13 +166,37 @@ Explanation of model choice, including limitations and benefits
 Explanation of changes in model choice
  - After an initial accuracy rate of 77% while running the Logistic Regression Classifer we added Gradient Boost Classifer and Random Forest Classifier models to increase accuracy. 
 
+
+Classifiers
+<p align="left">                                                                           
+  <img 
+    width="500"
+    height="500"
+    src="images/Classifiers.png"
+  >
+</p>
+
+
+
+Confusion Matrices
+<p align="right">
+  <img 
+    width="500"
+    height="500"
+    src="images/Matrix.png"
+  >
+</p>
+
 Description of how we have trained the model thus far, and any additional training that will take place
+
  - We identified that using all the voter data was not an accurate representation of the voters eligible to vote in a given election. For example, a voter born in 2002 is listed as a registered voter; however, they could not have voted in the 2008 election.  We had to further clean the data and only look at voters that were a.) old enough to vote in a given election and b.) had actually registered prior to the election date. 
- - Using the cleaned data and the Gradient Boost classifier, we used the Grid Search CV, cross validation model to evaluate the performance of the model and to determine whether non-standard hyperparameters would result in a better fit. 
+ - Using the cleaned data and the Gradient Boost classifier, we used the Grid Search CV cross validation model to evaluate the performance of the model and to determine whether non-standard hyperparameters would result in a better fit. 
  - Modifiying the number of estimators, the learning rate and the max_depth, the revised model resulted in an accuracy score of 88%. 
 
 Description of current accuracy score
+
  - The current accuracy score of the Gradient Boost Classifier model is 88%.
+
 
 ### Database Integration
 
@@ -186,6 +214,14 @@ Includes at least one join using the database language
 
 Includes at least one connection string
  - Exporting our tables to csv files after joining  
+
+<p align="center">
+  <img 
+    width="500"
+    height="500"
+    src="images/go_vote_table_creation.png"
+  >
+</p>
 
 
 ### Schema
@@ -220,18 +256,26 @@ Birth Year    | Generational Group
 
 #### Google Slides Link [Here](https://docs.google.com/presentation/d/1MM8PHN10rRyozVNqGxoPIhzx3RIcxcASvziTmO43SMM/edit?usp=sharing)
 
-Images from the initial analysis
-Data (images or report) from the machine learning task
 
-![Median Voter Birth Year by Zip Code](images/MedianBirthYearbyZip.png)
 
+<p align="center">
+  <img 
+    width="500"
+    height="500"
+    src="images/MedianBirthYearbyZip.png"
+  >
+</p>
 
 *Color range is light to dark as birth year increases
 
 
-
-![Generational Group Voting by Election Year](images/voters_by_election_year_and_bucket.png)
-
+<p align="center">
+  <img 
+    width="500"
+    height="500"
+    src="images/voters_by_election_year_and_bucket.png"
+  >
+</p>
 
 *Color assigned by generational group
 
