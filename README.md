@@ -102,7 +102,7 @@ Database Storage
  - We used SQL to split our data into additional tables and then join relevant information to form a final, clean datset. We removed voter demographics 
  voting record primary election (OneHotCoding - party affiliation D/F/N) - issues only ballot if non-partisan(N) voting record - general election with voter ID (Y = 1, Null = 0)
 
-Machine Learning
+Machine Learning  
 SciKitLearn is the ML library we used to create a classification model. Our training and testing set up is 80/20.
 
 Dashboard
@@ -127,6 +127,10 @@ X - Technologies used (Emad)
 
 
 ### Machine Learning Model
+
+What is our model predicting? 
+
+We are predicting registered voters' likeliness to vote in the 2020 General Election, based on past voting trends.
 
 Description of data preprocessing
 
@@ -155,10 +159,10 @@ Explanation of model choice, including limitations and benefits
  - Adopted Grid Search CV as a way to increase accuracy score and perform hyper parameter tuning
 
 Explanation of changes in model choice
- - After an initial accuracy rate of ----% while running the Logistic Regression Classifer we added Gradient Boost Classifer and Random Forest Classifier models to increase accuracy. 
+ - After an initial accuracy rate of 77% while running the Logistic Regression Classifer we added Gradient Boost Classifer and Random Forest Classifier models to increase accuracy. 
 
 Description of how we have trained the model thus far, and any additional training that will take place
-
+ - 
 
 Description of current accuracy score
 
