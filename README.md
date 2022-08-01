@@ -165,7 +165,7 @@ Explanation of changes in model choice
  - After an initial accuracy rate of 77% while running the Logistic Regression Classifer we added Gradient Boost Classifer and Random Forest Classifier models to increase accuracy. 
 
 
-                    Classifiers
+
 <p align="left">                                                                           
   <img 
     width="500"
@@ -175,12 +175,10 @@ Explanation of changes in model choice
 </p>
 
 
-
-                                                                      Confusion Matrices
 <p align="right">
   <img 
     width="500"
-    height="500"
+    height="1000"
     src="images/Matrix.png"
   >
 </p>
@@ -213,13 +211,7 @@ Includes at least one join using the database language
 Includes at least one connection string
  - Exporting our tables to csv files after joining  
 
-<p align="center">
-  <img 
-    width="500"
-    height="500"
-    src="images/slides_db.png"
-  >
-</p>
+![PgAdmin](images/slides_db.png)
 
 
 ### Schema
