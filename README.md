@@ -261,8 +261,8 @@ Birth Year    | Generational Group
 
 <p align="center">
   <img 
-    width="800"
-    height="500"
+    width="700"
+    height="1000"
     src="images/voters_by_election_year_and_bucket.png"
   >
 </p>
