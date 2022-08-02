@@ -31,12 +31,15 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #### Reason we selected the topic
   The United States is experiencing high levels of political turmoil, making this topic extremely relevant. Our group would like to identify potential factors contributing to voting trends within our shared home county, and analyze voter data to relate geographical and generational identification to voting patterns. In analyzing this data we hope to predict which party affiliation groups are more likely to vote for based on these features.
 
 #### Description of the source of data
   The Cuyahoga County Board of Elections serves its citizens by conducting the fundamental and vital functions of the election process. The Cuyahoga County Board of Elections has many datasets available to the public on their website [here](https://boe.cuyahogacounty.gov/maps-and-data). We chose to use a government site as opposed to a less credible source in order to ensure we are using clean and accurate data. 
 =======
+=======
+>>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
 =======
 >>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
 
@@ -48,6 +51,9 @@
   The Cuyahoga County Board of Elections serves its citizens by conducting the fundamental and vital functions of the election process. The Cuyahoga County Board of Elections has many datasets available to the public on their website [here](https://boe.cuyahogacounty.gov/maps-and-data). We chose to use a government site as opposed to a less credible source in order to ensure we are using clean and accurate data that adds purpose to our work. 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
+=======
 >>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
 =======
 >>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
@@ -57,8 +63,13 @@
  - We determined which data was most relevant to our questions and which data wouldn't add value
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  - We updated null values in the dataset to "0" (did not vote)
  - After processing data in PGadmin, we noticed we wanted additional columns within the same table. We added another join to capture additional election data and organize everything.
+=======
+ - After processing data in PGadmin, we noticed we wanted additional columns within the same table. We added another join to capture additional election data and organize everything, and eventually returned to PgAdmin to conduct more joins and data cleaning before exporting a final file.
+
+>>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
 =======
  - After processing data in PGadmin, we noticed we wanted additional columns within the same table. We added another join to capture additional election data and organize everything, and eventually returned to PgAdmin to conduct more joins and data cleaning before exporting a final file.
 
@@ -74,7 +85,11 @@
  - Organized data in bins based on generational groups/birth year
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  - Performed counts on total number of voters for: party affiliation, generational group
+=======
+ - Performed counts and averages on total number of voters for party affiliation and generational group
+>>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
 =======
  - Performed counts and averages on total number of voters for party affiliation and generational group
 >>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
@@ -88,6 +103,7 @@
 What story do you want your data to tell? 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  - We want our data to tell a story about voting trends within Cuyahoga County and how age and city affect these trends. We also want to highlight different generational groups in order to show differences between not only age, but entire generations. 
 
 Do you have a goal? 
@@ -98,6 +114,8 @@ What kind of message will your dashboard display?
 =======
 =======
 >>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
+=======
+>>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
  - We want our data to tell a story about voting trends within Cuyahoga County and how age and location affect these trends. We also want to highlight different generational groups in order to show differences between not only age, but entire generations.
 
 Do you have a goal? 
@@ -106,6 +124,9 @@ Do you have a goal?
 What kind of message will your dashboard display? 
  - We intend to show historical voting data for presidential elections over the last 14 years and how it compares for each generational group and geographical area. We also want to highlight differences in primary election and general election where voters may have voted under a different party for on Combining this analysis with location mapping will hopefully enable users to shed light on their community and it's voting practices. 
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
+=======
 >>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
 =======
 >>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
@@ -115,11 +136,14 @@ Think of the top 5 things you want users to take away from your dashboard about 
 - The user's voting trends vs others in their generational group
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Prediction of the user's voting party affiliation in the next presidential election
 - A sense of the voting trends all over Cuyahoga County and party affiliation in the last 4 primary elections
 - A sense of the voting trends all over Cuyahoga County for the last 4 presidential elections
 
 =======
+=======
+>>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
 =======
 >>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
 - Potential prediction of the user's voting party affiliation in the next presidential election
@@ -128,6 +152,9 @@ Think of the top 5 things you want users to take away from your dashboard about 
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
+=======
 >>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
 =======
 >>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
@@ -135,6 +162,7 @@ Think of the top 5 things you want users to take away from your dashboard about 
 
 Data Cleaning and Analysis
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 Pandas was utilized to clean data while completing an exploratory analysis on different aspects of the voter dataset. We used OnehotEncoding to determine party loyalty or changes to prepare for ML. We continued to clean our data once in Tableau as mapping illustrated new inconsistencies and outliers that were not previously apparent.
@@ -147,6 +175,8 @@ Pandas was utilized to clean data while completing an exploratory analysis on di
 =======
 =======
 >>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
+=======
+>>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
 Pandas was utilized to clean data while completing an exploratory analysis on different aspects of the voter dataset. We used OnehotEncoding to determine party loyalty/changes to prepare for ML. We continued to clean our data once in Tableau as mapping illustrated new inconsistencies and outliers that were not previously apparent.
 
  - Reviewed data to determine non-viability of specific column information 
@@ -155,6 +185,9 @@ Pandas was utilized to clean data while completing an exploratory analysis on di
  - Determined overall effect on outcome when removing entire population based on birth year
  - Determined appropriate DataFrames to export to PgAdmin (csv)
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
+=======
 >>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
 =======
 >>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
@@ -168,7 +201,11 @@ Description of data preprocessing
  - Reformatted zip codes to 5 digits for consistency (some were 9 digits)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  - Changed boolean values to "0" and "1"
+=======
+ - Changed boolean values and string values to "0" and "1"
+>>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
 =======
  - Changed boolean values and string values to "0" and "1"
 >>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
@@ -181,12 +218,15 @@ Description of data preprocessing
  - Removed Generation Z and Millennials data as younger generations were unable to vote in earlier elections
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  - One Hot coding
  - Renamed Columns
  - Hyper parameter tuning to find optimal classifier
  - Grid Search CV
  - Voting classifier (soft)
 =======
+=======
+>>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
 =======
 >>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
  - One Hot coding (party affiliation)
@@ -216,6 +256,9 @@ ml_df['Primary_Election_2008'] = ml_df['Primary_Election_2008'].apply(lambda x:p
 ml_df['Primary_Election_2020'] = ml_df['Primary_Election_2020'].apply(lambda x:party[x])
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
+=======
 >>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
 =======
 >>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
@@ -223,6 +266,7 @@ ml_df['Primary_Election_2020'] = ml_df['Primary_Election_2020'].apply(lambda x:p
 Database Storage
  - We used PgAdmin (SQL) as our database, while integrating the data into Tableau for visual effects.
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
  - We used SQL to split our data into additional tables and then join relevant information to form a final, clean datset. We removed voter demographics 
@@ -236,11 +280,16 @@ We will be using Tableau to display our findings, as well as Google slides for o
 =======
 =======
 >>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
+=======
+>>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
 SQL Code Used to Join Tables and Rename Columns
 
  ![SQL Code Used to Join Tables and Rename Columns](images/go_vote_code.png)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
+=======
 >>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
 =======
 >>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
@@ -255,6 +304,10 @@ SQL Code Used to Join Tables and Rename Columns
  - How many members of NOPARTY voted vs did not vote?
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+ - How many voters changed their party affiliation from primary election to general election?
+>>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
 =======
  - How many voters changed their party affiliation from primary election to general election?
 >>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
@@ -277,7 +330,12 @@ What is our model predicting?
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 We are predicting registered voters' likeliness to vote in the 2020 General Election, based on features in the dataset.
+=======
+We are predicting registered voters' likeliness to vote in the 2020 General Election, based on age, location, and party features in the dataset.
+
+>>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
 =======
 We are predicting registered voters' likeliness to vote in the 2020 General Election, based on age, location, and party features in the dataset.
 
@@ -293,6 +351,10 @@ Dataset was scrutinized for relevant information and complete voter info prior t
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
 =======
 
 >>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
@@ -306,7 +368,13 @@ Description of feature engineering and preliminary feature selection, including 
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Description of how data was split into training and testing sets
+=======
+
+Description of how data was split into training and testing sets
+ - SciKitLearn is the ML library we used to create a classification model
+>>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
 =======
 
 Description of how data was split into training and testing sets
@@ -323,8 +391,11 @@ Description of how data was split into training and testing sets
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ```
 =======
+=======
+>>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
 =======
 >>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
  
@@ -333,6 +404,9 @@ Explanation of model choice, including limitations and benefits
 
  ```
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
+=======
 >>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
 =======
 >>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
@@ -343,9 +417,12 @@ classifier.fit(X20_train, y20_train)
 ```
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  
 Explanation of model choice, including limitations and benefits
  - We felt using Logistic Regression made sense given our dataset and in order to optimize our web app. Using Logistic Regression could potentially limit us, but we wanted to showcase the data using a baseline model first. A benefit to this model is simplicity as well as the model working well to showcase our data with a web app
+=======
+>>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
 =======
 >>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
 =======
@@ -354,6 +431,7 @@ Explanation of model choice, including limitations and benefits
  - Accuracy score analysis indicated that Gradient Boost Classifier had the best fit  for the training data and the best match on the test data. 
  - Adopted Grid Search CV as a way to increase accuracy score and perform hyper parameter tuning
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 Explanation of changes in model choice
@@ -368,6 +446,8 @@ Description of current accuracy score
  - The current accuracy score of the Gradient Boost Classifier model is 88%.
 
 =======
+=======
+>>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
 =======
 >>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
 ```
@@ -413,6 +493,9 @@ Description of current accuracy score
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
+=======
 >>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
 =======
 >>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
@@ -435,6 +518,11 @@ Includes at least one connection string
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+![PgAdmin](images/slides_db.png)
+
+>>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
 =======
 ![PgAdmin](images/slides_db.png)
 
@@ -476,6 +564,7 @@ Birth Year    | Generational Group
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #### Google Slides Link [Here](https://docs.google.com/presentation/d/1MM8PHN10rRyozVNqGxoPIhzx3RIcxcASvziTmO43SMM/edit?usp=sharing)
 
 Images from the initial analysis
@@ -502,6 +591,8 @@ Data (images or report) from the machine learning task
 =======
 =======
 >>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
+=======
+>>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
 
 #### Description of Tools Used in Dashboard
 
@@ -511,6 +602,9 @@ Data (images or report) from the machine learning task
 
  - Google Slides - utilized to tell our data story start to finish while providing additional graphics and questions that arose while mapping and tinkering
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
+=======
 >>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
 =======
 >>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
@@ -524,7 +618,10 @@ Data (images or report) from the machine learning task
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
 =======
 >>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
  
@@ -556,6 +653,9 @@ Number of Voters in Last Four Presidential Elections by Generational Group
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
+=======
 >>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
 =======
 >>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
