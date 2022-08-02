@@ -1,6 +1,9 @@
 *.csv
 .DS_Store
+<<<<<<< HEAD
 *.json
+=======
+>>>>>>> c71709bd42d5607b6c68096b2f6ccb026c2e20dc
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
