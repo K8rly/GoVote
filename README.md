@@ -69,6 +69,17 @@ Think of the top 5 things you want users to take away from your dashboard about 
 - A sense of the voting trends all over Cuyahoga County and party affiliation in the last 4 primary elections
 - A sense of the voting trends all over Cuyahoga County for the last 4 presidential elections
 
+#### Questions We Hope to Answer with the Data
+
+ - What generational group is more likely to vote? 
+ - What zip code is more likely to vote?
+ - What geographical area has a higher percentage of voters/highest number of boomers, gen z, etc
+ - **Prediction: Which age groups/zip codes are more likely to vote Republican or Democrat?
+ - How many members of NOPARTY voted vs did not vote?
+
+ - Median Birth year of registered voters by zip code for Cuyahoga County, Ohio
+ - Voting percentage by zip code for registered voters as of October 5th 2020
+ - Counts of party within each Generational Group
 
 ### Technologies, Languages, Tools, and Algorithms Used throughout the Project
 
@@ -128,31 +139,36 @@ SQL Code Used to Join Tables and Rename Columns
 
  ![SQL Code Used to Join Tables and Rename Columns](images/go_vote_code.png)
 
+### Result of the Analysis
+Age and geographical area are significant indicators of voting practice in Cuyahoga County. There are vast differences in number of registered voters versus number of active voters.
 
+### Limitations of Analysis
+ - Registration dates complicate analysis and ability to accurately represent data
+ - Possible skewed data due to "dummy" dates used in Cuyahoga County dataset for registration dates
+ - Not having party affiliation for general elections, only primary elections
+ - Only using results from 2 election years because of generational groups not eligible to vote
+ - Elections used were unique compared to previous elections due to political climate
 
-#### Questions We Hope to Answer with the Data
+### Recommendation for Future Analysis
+Joining additional datasets from Cuyahoga County with our original datasets in order to use more features and increase predictability in machine learning model
+Obtain party data for general elections in order to predict outcomes and compare party affiliation changes 
 
- - What age group is more likely to vote? More likely to vote Republican or Democrat?
- - What zip code is more likely to vote? More likely to vote Republican or Democrat?
- - What geographical area has a higher percentage of voters/highest number of boomers, gen z, etc
- - **Prediction: Which age groups/zip codes are more likely to vote Republican or Democrat?
- - How many members of NOPARTY voted vs did not vote?
- - How many voters changed their party affiliation from primary election to general election?
-
+### Anything the Team Would Have Done Differently
+Allow more time to clean and analyze. We found relevant information regarding the dataset throughout the process, and found that we could have saved time going back to continue cleaning and creating new tables/data frames based on nuances and inconsistencies found.
 
 ### Role Distribution
 
 Circle - Database (Sarah)  
 Square - Github (Leiana)  
-Triangle - ML Model (Katterli)  
-X - Technologies used (Emad)  
+Triangle - ML Model (Emad)  
+X - Technologies used (Katterli)  
 
 
 ### Machine Learning Model
 
 What is our model predicting? 
 
-We are predicting registered voters' likeliness to vote in the 2020 General Election, based on age, location, and party features in the dataset.
+We are predicting registered voters' likeliness to vote in the 2020 General Election, based on historical voting practices, age, location, and party features in the dataset.
 
 
 Description of data preprocessing
@@ -199,7 +215,6 @@ Explanation of changes in model choice
  - After an initial accuracy rate of 77% while running the Logistic Regression Classifer we added Gradient Boost Classifer and Random Forest Classifier models to increase accuracy. 
 
 
-
 <p align="left">                                                                           
   <img 
     width="500"
@@ -217,13 +232,14 @@ Explanation of changes in model choice
   >
 </p>
 
-Description of how we have trained the model thus far, and any additional training that will take place
+
+Description of how the model was trained (or retrained, if the team is using an existing model)
 
  - We identified that using all the voter data was not an accurate representation of the voters eligible to vote in a given election. For example, a voter born in 2002 is listed as a registered voter; however, they could not have voted in the 2008 election.  We had to further clean the data and only look at voters that were a.) old enough to vote in a given election and b.) had actually registered prior to the election date. 
  - Using the cleaned data and the Gradient Boost classifier, we used the Grid Search CV cross validation model to evaluate the performance of the model and to determine whether non-standard hyperparameters would result in a better fit. 
  - Modifiying the number of estimators, the learning rate and the max_depth, the revised model resulted in an accuracy score of 88%. 
 
-Description of current accuracy score
+Description and explanation of model's confusion matrix, including final accuracy score
 
  - The current accuracy score of the Gradient Boost Classifier model is 88%.
 
@@ -278,6 +294,7 @@ Birth Year    | Generational Group
 
 ### Dashboard
 
+### Link to Dashboard 
 
 #### Description of Tools Used in Dashboard
 
@@ -311,13 +328,9 @@ Median Birth Year of Voters by Zip Code for Cuyahoga County, Ohio
 *Color range is light to dark as birth year increases
 
 Number of Voters in Last Four Presidential Elections by Generational Group
-<p align="center">
-  <img 
-    width="700"
-    height="1000"
-    src="images/voters_by_election_year_and_bucket.png"
-  >
-</p>
+
+![Number of Voters by Generational Group](images/voters_by_election_year_and_bucket.png)
+
 
 *Color assigned by generational group
 
