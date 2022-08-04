@@ -20,9 +20,9 @@
 8. [Machine Learning Model](#Machine-Learning-Model)
 9. [Database Integration](#Database-Integration)
 10. [Schema](#Schema)
-11. [ERD](#ERD)
+11. [Entity Relationship Diagram (ERD)](#Entity-Relationship-Diagram-(ERD))
 12. [Generation Breakdown](#Generation-Breakdown)
-13. [Visual Representation](#Dashboard)
+13. [Visual Representation](#Visual-Representation)
 
 
 ### Presentation
