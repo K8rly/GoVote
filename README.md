@@ -20,9 +20,9 @@
 8. [Machine Learning Model](#Machine-Learning-Model)
 9. [Database Integration](#Database-Integration)
 10. [Schema](#Schema)
-11. [ERD](#ERD)
+11. [Entity Relationship Diagram (ERD)](#Entity-Relationship-Diagram)
 12. [Generation Breakdown](#Generation-Breakdown)
-13. [Visual Representation](#Dashboard)
+13. [Visual Representation](#Visual-Representation)
 
 
 ### Presentation
@@ -280,7 +280,7 @@ Includes at least one connection string
 Please reference [GoVote_schema](https://github.com/K8rly/GoVote/blob/main/GoVote_schema) showing work that has been completed in PGAdmin and Pandas
 
 
-### Entity Relationship Diagram (ERD)
+### Entity Relationship Diagram
 
 <p align="center">
   <img 
