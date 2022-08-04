@@ -72,13 +72,13 @@ Think of the top 5 things you want users to take away from your dashboard about 
 #### Questions We Hope to Answer with the Data
 
  - What generational group is more likely to vote? 
- - What zip code is more likely to vote?
- - What geographical area has a higher percentage of voters/highest number of boomers, gen z, etc
- - **Prediction: Which age groups/zip codes are more likely to vote Republican or Democrat?
+ - What geographical area has a higher percentage of voters?
+ - What geographical areas has the highest number of boomers, gen z, etc?
+ - Which age groups/zip codes are more likely to vote in the 2020 election?
  - How many members of NOPARTY voted vs did not vote?
 
  - Median Birth year of registered voters by zip code for Cuyahoga County, Ohio
- - Voting percentage by zip code for registered voters as of October 5th 2020
+ - Voting percentage by zip code for registered voters as of October 5th, 2020
  - Counts of party within each Generational Group
 
 ### Technologies, Languages, Tools, and Algorithms Used throughout the Project
@@ -104,7 +104,7 @@ Description of data preprocessing
  - Cleaned up city names for consistency (Hts ->> Heights)
  - Dropped voter information with birth years prior to first generational bucket (1927 and earlier)
  - Organized birth year into buckets to show generational groups
- - Removed Generation Z and Millennials data as younger generations were unable to vote in earlier elections
+ - Removed younger voter data for those unable to vote in earlier elections
  - One Hot coding (party affiliation)
  - Renamed Columns and Removed irrelevant information
  - Hyper parameter tuning to find optimal classifier
@@ -143,6 +143,7 @@ SQL Code Used to Join Tables and Rename Columns
 Age and geographical area are significant indicators of voting practice in Cuyahoga County. There are vast differences in number of registered voters versus number of active voters.
 
 ### Limitations of Analysis
+
  - Registration dates complicate analysis and ability to accurately represent data
  - Possible skewed data due to "dummy" dates used in Cuyahoga County dataset for registration dates
  - Not having party affiliation for general elections, only primary elections
@@ -150,11 +151,16 @@ Age and geographical area are significant indicators of voting practice in Cuyah
  - Elections used were unique compared to previous elections due to political climate
 
 ### Recommendation for Future Analysis
-Joining additional datasets from Cuyahoga County with our original datasets in order to use more features and increase predictability in machine learning model
-Obtain party data for general elections in order to predict outcomes and compare party affiliation changes 
+
+Joining additional datasets from Cuyahoga County with our original datasets in order to use more features and increase predictability in machine learning model.
+
+Obtain party data for general elections in order to predict outcomes and compare party affiliation changes.
+
+Look at NOPRTY affiliation more closely and potentially determine which issues are important to these voters and how campaigns can be directed at this population.
 
 ### Anything the Team Would Have Done Differently
-Allow more time to clean and analyze. We found relevant information regarding the dataset throughout the process, and found that we could have saved time going back to continue cleaning and creating new tables/data frames based on nuances and inconsistencies found.
+
+Allow more time to clean and analyze. We found relevant information regarding the dataset throughout the process, and found that we could have saved time going back to continue cleaning and creating new tables/data frames based on nuances and inconsistencies found later.
 
 ### Role Distribution
 
