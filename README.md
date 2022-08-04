@@ -14,14 +14,15 @@
 2. [Description of the Data Exploration Phase](#Description-of-the-Data-Exploration-Phase)
 3. [Description of the Analysis Phase](#Description-of-the-Analysis-Phase)
 4. [Team Questions](#Team-Questions)
-5. [Technologies](#technologies-languages-tools-and-algorithms-used-throughout-the-project)
-6. [Role Distribution](#Role-Distribution)
-7. [Machine Learning Model](#Machine-Learning-Model)
-8. [Database Integration](#Database-Integration)
-9. [Schema](#Schema)
-10. [ERD](#ERD)
-11. [Generation Breakdown](#Generation-Breakdown)
-12. [Dashboard](#Dashboard)
+5. [Role Distribution](#Role-Distribution)
+6. [Technologies](#technologies-languages-tools-and-algorithms-used-throughout-the-project)
+7. [Results of the Analysis](#Results-of-the-Analysis)
+8. [Machine Learning Model](#Machine-Learning-Model)
+9. [Database Integration](#Database-Integration)
+10. [Schema](#Schema)
+11. [ERD](#ERD)
+12. [Generation Breakdown](#Generation-Breakdown)
+13. [Visual Representation](#Dashboard)
 
 
 ### Presentation
@@ -81,6 +82,14 @@ Think of the top 5 things you want users to take away from your dashboard about 
  - Voting percentage by zip code for registered voters as of October 5th, 2020
  - Counts of party within each Generational Group
 
+### Role Distribution
+
+Circle - Database (Sarah)  
+Square - Github (Leiana)  
+Triangle - ML Model (Emad)  
+X - Technologies used (Katterli)  
+
+
 ### Technologies, Languages, Tools, and Algorithms Used throughout the Project
 
 Data Cleaning and Analysis
@@ -139,8 +148,11 @@ SQL Code Used to Join Tables and Rename Columns
 
  ![SQL Code Used to Join Tables and Rename Columns](images/go_vote_code.png)
 
-### Result of the Analysis
-Age and geographical area are significant indicators of voting practice in Cuyahoga County. There are vast differences in number of registered voters versus number of active voters.
+### Results of the Analysis
+
+Age and geographical area are significant indicators of voting practice in Cuyahoga County. Examining generational groups added an interesting and relevant way to look at voting trends. 
+
+There are vast differences in number of registered voters versus number of active voters, adding insight we had not previously predicted. 
 
 ### Limitations of Analysis
 
@@ -161,13 +173,6 @@ Look at NOPRTY affiliation more closely and potentially determine which issues a
 ### Anything the Team Would Have Done Differently
 
 Allow more time to clean and analyze. We found relevant information regarding the dataset throughout the process, and found that we could have saved time going back to continue cleaning and creating new tables/data frames based on nuances and inconsistencies found later.
-
-### Role Distribution
-
-Circle - Database (Sarah)  
-Square - Github (Leiana)  
-Triangle - ML Model (Emad)  
-X - Technologies used (Katterli)  
 
 
 ### Machine Learning Model
@@ -298,13 +303,17 @@ Birth Year    | Generational Group
 1997-2012     | Generation Z
 
 
-### Dashboard
+### Visual Representation
 
-### Link to Dashboard 
+#### Tableau Dashboard Link
+
+
+#### Google Slides Link [Here](https://docs.google.com/presentation/d/1MM8PHN10rRyozVNqGxoPIhzx3RIcxcASvziTmO43SMM/edit?usp=sharing)
+
 
 #### Description of Tools Used in Dashboard
 
- - Tableau - utilized to display voting data results based on generational age brackets, reflecting voting patterns based on age and area of residence, will include interactive mapping and graphs
+ - Tableau - utilized to display voting data results based on generational age brackets, reflecting voting patterns based on age and area of residence
  
  - Performed some cleaning in Tableau once we started mapping and noticed outliers and inconsistencies
 
@@ -312,13 +321,8 @@ Birth Year    | Generational Group
 
 
 #### Description of Interactive Elements
-
- - Application that will allow users to enter their birth year, zip code, city, or city boundary from a drop down to create a prediction of which party they will vote.
  
- - Our Tableau dashboard will include a hover-over within multiple maps to display voting trends
-
- 
-#### Google Slides Link [Here](https://docs.google.com/presentation/d/1MM8PHN10rRyozVNqGxoPIhzx3RIcxcASvziTmO43SMM/edit?usp=sharing)
+ - Our Tableau dashboard will include hover-over functions within multiple maps and charts to display voting trends across the county
 
 
 Median Birth Year of Voters by Zip Code for Cuyahoga County, Ohio
