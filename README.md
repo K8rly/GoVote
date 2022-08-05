@@ -157,6 +157,7 @@ There are vast differences in number of registered voters versus number of activ
 ### Limitations of Analysis
 
  - Registration dates complicate analysis and ability to accurately represent data
+ - Using a simplified dataset with limited demographic features may have exaggerated the importance of the features tested
  - Possible skewed data due to "dummy" dates used in Cuyahoga County dataset for registration dates
  - Not having party affiliation for general elections, only primary elections
  - Only using results from 2 election years because of generational groups not eligible to vote
@@ -235,14 +236,6 @@ Explanation of changes in model choice
 </p>
 
 
-<p align="right">
-  <img 
-    width="500"
-    height="1000"
-    src="images/Matrix.png"
-  >
-</p>
-
 
 Description of how the model was trained (or retrained, if the team is using an existing model)
 
@@ -254,6 +247,13 @@ Description and explanation of model's confusion matrix, including final accurac
 
  - The current accuracy score of the Gradient Boost Classifier model is 88%.
 
+<p align="right">
+  <img 
+    width="500"
+    height="1000"
+    src="images/"
+  >
+</p>
 
 ### Database Integration
 
@@ -339,7 +339,7 @@ Median Birth Year of Voters by Zip Code for Cuyahoga County, Ohio
 
 Number of Voters in Last Four Presidential Elections by Generational Group
 
-![Number of Voters by Generational Group](images/voters_by_election_year_and_bucket.png)
+![Voter Opportunities](images/voter_opp.png)
 
 
 *Color assigned by generational group
