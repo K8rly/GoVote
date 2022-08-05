@@ -250,7 +250,7 @@ Description and explanation of model's confusion matrix, including final accurac
 <p align="center">
   <img 
     width="500"
-    height="100"
+    height="1000"
     src="images/class_reports.png"
   >
 </p>
@@ -329,7 +329,7 @@ Median Birth Year of Voters by Zip Code for Cuyahoga County, Ohio
 
 <p align="center">
   <img 
-    width="800"
+    width="600"
     height="500"
     src="images/MedianBirthYearbyZip.png"
   >
@@ -341,7 +341,7 @@ Number of Voters in Last Four Presidential Elections by Generational Group
 
 <p align="center">
   <img 
-    width="800"
+    width="600"
     height="500"
     src="images/voter_opp.png"
   >
