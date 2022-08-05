@@ -23,7 +23,7 @@
 11. [Entity Relationship Diagram (ERD)](#Entity-Relationship-Diagram)
 12. [Generation Breakdown](#Generation-Breakdown)
 13. [Visual Representation](#Visual-Representation)
-
+14. [Conclusion](#Conclusion)
 
 ### Presentation
 
@@ -230,7 +230,7 @@ Explanation of changes in model choice
 <p align="left">                                                                           
   <img 
     width="500"
-    height="500"
+    height="1000"
     src="images/Classifiers.png"
   >
 </p>
@@ -247,11 +247,11 @@ Description and explanation of model's confusion matrix, including final accurac
 
  - The current accuracy score of the Gradient Boost Classifier model is 88%.
 
-<p align="right">
+<p align="center">
   <img 
     width="500"
-    height="1000"
-    src="images/"
+    height="500"
+    src="images/class_reports.png"
   >
 </p>
 
@@ -339,10 +339,25 @@ Median Birth Year of Voters by Zip Code for Cuyahoga County, Ohio
 
 Number of Voters in Last Four Presidential Elections by Generational Group
 
-![Voter Opportunities](images/voter_opp.png)
+<p align="center">
+  <img 
+    width="800"
+    height="500"
+    src="images/voter_opp.png"
+  >
+</p>
 
 
-*Color assigned by generational group
+#### Conclusion
+
+### What can be done to increase voter turnout in Cuyahoga County?
+
+Based on the population size and low rates of active voters, we propose that more attention be given to urban areas within Cuyahoga County in order to increase voter turnout.
+
+Additionally, focusing on increasing voter turnout for primary elections could have significant effects on future general election outcomes.
+
+Finally, we feel that Generation Z voters should be a targeted group as they have a very high registration rate, but significantly lower voter turnout rate.
+
 
 
 
