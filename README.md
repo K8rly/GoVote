@@ -230,7 +230,7 @@ Explanation of changes in model choice
 <p align="left">                                                                           
   <img 
     width="500"
-    height="500"
+    height="1000"
     src="images/Classifiers.png"
   >
 </p>
