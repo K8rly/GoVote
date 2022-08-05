@@ -230,7 +230,7 @@ Explanation of changes in model choice
 <p align="left">                                                                           
   <img 
     width="500"
-    height="1000"
+    height="500"
     src="images/Classifiers.png"
   >
 </p>
@@ -250,7 +250,7 @@ Description and explanation of model's confusion matrix, including final accurac
 <p align="center">
   <img 
     width="500"
-    height="500"
+    height="100"
     src="images/class_reports.png"
   >
 </p>
