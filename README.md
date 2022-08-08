@@ -189,20 +189,20 @@ Dataset was scrutinized for relevant information and complete voter info prior t
 
 
 Description of feature engineering and preliminary feature selection, including the decision-making process
- - Used birth year and zip code as features in first round of ML to help achieve answers to our questions on how age and location affected voting. *Our group decided to use zip code as opposed to city after viewing a map of the data in Tableau
- - Used generational buckets and party affiliation as supplemental features to better fit ML model
+ - Used birth year and zip code as features in first round of ML to help achieve answers to our questions on how age and location affected voting. 
+ - Used generational buckets, city and party affiliation as supplemental features to better fit ML model
  - Previous voting history was also used as an indicator of potential to vote.
 
 
 Description of how data was split into training and testing sets
  - SciKitLearn is the ML library we used to create a classification model
  - Split data into training and testing sets (80/20)
- - * Assigned general election to x (as the target) and features to y for each of the four presidential elections (2008, 2012, 2016, 2020)
+ - Assigned 2020 general election to x (as the target) and features to y were; zip code, city, age, generational bucket and voting history in the primaries for 2016 and 2020 and the general election in 2016.
  - Used One hot coding to establish generational buckets (Silent, Boomers, Generation X, Millennials, Generation Z)
 
  
 Explanation of model choice, including limitations and benefits
- - We felt using Logistic Regression made sense given our dataset and in order to optimize our web app. Using Logistic Regression could potentially limit us, but we wanted to showcase the data using a baseline model first. A benefit to this model is simplicity while a limitation would also be simplicity- such a simple model likely won't yield a robust accuracy score 
+ - We felt using Logistic Regression made sense given our dataset and in order to optimize our web app. Using Logistic Regression could potentially limit us, but we wanted to showcase the data using a baseline model first. A benefit to this model is simplicity and its lack of sensitivity to outliers while a limitation is the inability to fit datasets with sparse features. 
 
  ```
 X20_train, X20_test, y20_train, y20_test = train_test_split(X20, y20, random_state=1)
@@ -211,9 +211,10 @@ classifier
 classifier.fit(X20_train, y20_train)
 ```
  - We used Random Forest Classifier and Gradient Boost Classifier as alternative/additional models to achieve a higher rate of accuracy after trying Logistic Regression
+ - Random Forest Classifier which averages the predictions of multiple decision trees, generally works well on large datasets and is not sensitive to outliers. It is slow to train and not good at  fitting datasets with sparse features.
+ - Gradient Boosting is an ensemble model that iteratively learns from weaker models to build a strong model. It allows for flexibility and works well with categorical data.  It is computationally time consuming and has a potential to overfit. 
  - Accuracy score analysis indicated that Gradient Boost Classifier had the best fit  for the training data and the best match on the test data. 
- - Adopted Grid Search CV as a way to increase accuracy score and perform hyper parameter tuning
-
+ 
 ```
 rf_model = RandomForestClassifier(n_estimators=128, random_state=78)
 # Fitting the model
@@ -224,7 +225,7 @@ print(f" Random forest predictive accuracy: {accuracy_score(y_test,y_pred):.3f}"
 ```
 
 Explanation of changes in model choice
- - After an initial accuracy rate of 77% while running the Logistic Regression Classifer we added Gradient Boost Classifer and Random Forest Classifier models to increase accuracy. 
+ - After an initial accuracy rate of 70% while running the Logistic Regression Classifer we added Gradient Boost Classifer and Random Forest Classifier models to increase accuracy. 
 
 
 <p align="left">                                                                           
@@ -245,7 +246,8 @@ Description of how the model was trained (or retrained, if the team is using an 
 
 Description and explanation of model's confusion matrix, including final accuracy score
 
- - The current accuracy score of the Gradient Boost Classifier model is 88%.
+ - The current accuracy score of the Gradient Boost Classifier model is 83%. Our results show that once the dataset was cleaned for the eligible voters, the models all performed within the same range or accuracy.  There was a slight improvement in the Gradient Boosting and Random forest with respect to precision and recall for identifying those voters who would not vote.  Since our stated goal was to find those voters who should be targeted by get out the vote efforts, the Gradient Boosting is the best predictive model for our purposes. 
+
 
 <p align="center">
   <img 
