@@ -14,15 +14,16 @@
 2. [Description of the Data Exploration Phase](#Description-of-the-Data-Exploration-Phase)
 3. [Description of the Analysis Phase](#Description-of-the-Analysis-Phase)
 4. [Team Questions](#Team-Questions)
-5. [Technologies](#technologies-languages-tools-and-algorithms-used-throughout-the-project)
-6. [Role Distribution](#Role-Distribution)
-7. [Machine Learning Model](#Machine-Learning-Model)
-8. [Database Integration](#Database-Integration)
-9. [Schema](#Schema)
-10. [ERD](#ERD)
-11. [Generation Breakdown](#Generation-Breakdown)
-12. [Dashboard](#Dashboard)
-
+5. [Role Distribution](#Role-Distribution)
+6. [Technologies](#technologies-languages-tools-and-algorithms-used-throughout-the-project)
+7. [Results of the Analysis](#Results-of-the-Analysis)
+8. [Machine Learning Model](#Machine-Learning-Model)
+9. [Database Integration](#Database-Integration)
+10. [Schema](#Schema)
+11. [Entity Relationship Diagram (ERD)](#Entity-Relationship-Diagram)
+12. [Generation Breakdown](#Generation-Breakdown)
+13. [Visual Representation](#Visual-Representation)
+14. [Conclusion](#Conclusion)
 
 ### Presentation
 
@@ -72,14 +73,22 @@ Think of the top 5 things you want users to take away from your dashboard about 
 #### Questions We Hope to Answer with the Data
 
  - What generational group is more likely to vote? 
- - What zip code is more likely to vote?
- - What geographical area has a higher percentage of voters/highest number of boomers, gen z, etc
- - **Prediction: Which age groups/zip codes are more likely to vote Republican or Democrat?
+ - What geographical area has a higher percentage of voters?
+ - What geographical areas has the highest number of boomers, gen z, etc?
+ - Which age groups/zip codes are more likely to vote in the 2020 election?
  - How many members of NOPARTY voted vs did not vote?
 
  - Median Birth year of registered voters by zip code for Cuyahoga County, Ohio
- - Voting percentage by zip code for registered voters as of October 5th 2020
+ - Voting percentage by zip code for registered voters as of October 5th, 2020
  - Counts of party within each Generational Group
+
+### Role Distribution
+
+Circle - Database (Sarah)  
+Square - Github (Leiana)  
+Triangle - ML Model (Emad)  
+X - Technologies used (Katterli)  
+
 
 ### Technologies, Languages, Tools, and Algorithms Used throughout the Project
 
@@ -104,7 +113,7 @@ Description of data preprocessing
  - Cleaned up city names for consistency (Hts ->> Heights)
  - Dropped voter information with birth years prior to first generational bucket (1927 and earlier)
  - Organized birth year into buckets to show generational groups
- - Removed Generation Z and Millennials data as younger generations were unable to vote in earlier elections
+ - Removed younger voter data for those unable to vote in earlier elections
  - One Hot coding (party affiliation)
  - Renamed Columns and Removed irrelevant information
  - Hyper parameter tuning to find optimal classifier
@@ -139,29 +148,32 @@ SQL Code Used to Join Tables and Rename Columns
 
  ![SQL Code Used to Join Tables and Rename Columns](images/go_vote_code.png)
 
-### Result of the Analysis
-Age and geographical area are significant indicators of voting practice in Cuyahoga County. There are vast differences in number of registered voters versus number of active voters.
+### Results of the Analysis
+
+Age and geographical area are significant indicators of voting practice in Cuyahoga County. Examining generational groups added an interesting and relevant way to look at voting trends. 
+
+There are vast differences in number of registered voters versus number of active voters, adding insight we had not previously predicted. 
 
 ### Limitations of Analysis
+
  - Registration dates complicate analysis and ability to accurately represent data
+ - Using a simplified dataset with limited demographic features may have exaggerated the importance of the features tested
  - Possible skewed data due to "dummy" dates used in Cuyahoga County dataset for registration dates
  - Not having party affiliation for general elections, only primary elections
  - Only using results from 2 election years because of generational groups not eligible to vote
  - Elections used were unique compared to previous elections due to political climate
 
 ### Recommendation for Future Analysis
-Joining additional datasets from Cuyahoga County with our original datasets in order to use more features and increase predictability in machine learning model
-Obtain party data for general elections in order to predict outcomes and compare party affiliation changes 
+
+Joining additional datasets from Cuyahoga County with our original datasets in order to use more features and increase predictability in machine learning model.
+
+Obtain party data for general elections in order to predict outcomes and compare party affiliation changes.
+
+Look at NOPRTY affiliation more closely and potentially determine which issues are important to these voters and how campaigns can be directed at this population.
 
 ### Anything the Team Would Have Done Differently
-Allow more time to clean and analyze. We found relevant information regarding the dataset throughout the process, and found that we could have saved time going back to continue cleaning and creating new tables/data frames based on nuances and inconsistencies found.
 
-### Role Distribution
-
-Circle - Database (Sarah)  
-Square - Github (Leiana)  
-Triangle - ML Model (Emad)  
-X - Technologies used (Katterli)  
+Allow more time to clean and analyze. We found relevant information regarding the dataset throughout the process, and found that we could have saved time going back to continue cleaning and creating new tables/data frames based on nuances and inconsistencies found later.
 
 
 ### Machine Learning Model
@@ -224,14 +236,6 @@ Explanation of changes in model choice
 </p>
 
 
-<p align="right">
-  <img 
-    width="500"
-    height="1000"
-    src="images/Matrix.png"
-  >
-</p>
-
 
 Description of how the model was trained (or retrained, if the team is using an existing model)
 
@@ -243,6 +247,13 @@ Description and explanation of model's confusion matrix, including final accurac
 
  - The current accuracy score of the Gradient Boost Classifier model is 88%.
 
+<p align="center">
+  <img 
+    width="500"
+    height="1000"
+    src="images/class_reports.png"
+  >
+</p>
 
 ### Database Integration
 
@@ -269,7 +280,7 @@ Includes at least one connection string
 Please reference [GoVote_schema](https://github.com/K8rly/GoVote/blob/main/GoVote_schema) showing work that has been completed in PGAdmin and Pandas
 
 
-### Entity Relationship Diagram (ERD)
+### Entity Relationship Diagram
 
 <p align="center">
   <img 
@@ -292,13 +303,17 @@ Birth Year    | Generational Group
 1997-2012     | Generation Z
 
 
-### Dashboard
+### Visual Representation
 
-### Link to Dashboard 
+#### Tableau Dashboard Link
+
+
+#### Google Slides Link [Here](https://docs.google.com/presentation/d/1MM8PHN10rRyozVNqGxoPIhzx3RIcxcASvziTmO43SMM/edit?usp=sharing)
+
 
 #### Description of Tools Used in Dashboard
 
- - Tableau - utilized to display voting data results based on generational age brackets, reflecting voting patterns based on age and area of residence, will include interactive mapping and graphs
+ - Tableau - utilized to display voting data results based on generational age brackets, reflecting voting patterns based on age and area of residence
  
  - Performed some cleaning in Tableau once we started mapping and noticed outliers and inconsistencies
 
@@ -306,20 +321,15 @@ Birth Year    | Generational Group
 
 
 #### Description of Interactive Elements
-
- - Application that will allow users to enter their birth year, zip code, city, or city boundary from a drop down to create a prediction of which party they will vote.
  
- - Our Tableau dashboard will include a hover-over within multiple maps to display voting trends
-
- 
-#### Google Slides Link [Here](https://docs.google.com/presentation/d/1MM8PHN10rRyozVNqGxoPIhzx3RIcxcASvziTmO43SMM/edit?usp=sharing)
+ - Our Tableau dashboard will include hover-over functions within multiple maps and charts to display voting trends across the county
 
 
 Median Birth Year of Voters by Zip Code for Cuyahoga County, Ohio
 
 <p align="center">
   <img 
-    width="800"
+    width="600"
     height="500"
     src="images/MedianBirthYearbyZip.png"
   >
@@ -329,10 +339,25 @@ Median Birth Year of Voters by Zip Code for Cuyahoga County, Ohio
 
 Number of Voters in Last Four Presidential Elections by Generational Group
 
-![Number of Voters by Generational Group](images/voters_by_election_year_and_bucket.png)
+<p align="center">
+  <img 
+    width="600"
+    height="500"
+    src="images/voter_opp.png"
+  >
+</p>
 
 
-*Color assigned by generational group
+#### Conclusion
+
+### What can be done to increase voter turnout in Cuyahoga County?
+
+Based on the population size and low rates of active voters, we propose that more attention be given to urban areas within Cuyahoga County in order to increase voter turnout.
+
+Additionally, focusing on increasing voter turnout for primary elections could have significant effects on future general election outcomes.
+
+Finally, we feel that Generation Z voters should be a targeted group as they have a very high registration rate, but significantly lower voter turnout rate.
+
 
 
 
