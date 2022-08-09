@@ -72,6 +72,7 @@ Think of the top 5 things you want users to take away from your dashboard about 
 - A sense of the voting trends all over Cuyahoga County and party affiliation in the last 2 primary elections
 - A sense of the voting trends all over Cuyahoga County for the last 2 presidential elections
 
+
 #### Questions We Hope to Answer with the Data
 
  - What generational group is more likely to vote? 
@@ -81,6 +82,7 @@ Think of the top 5 things you want users to take away from your dashboard about 
  - How many members of NOPARTY voted vs did not vote?
  - Median Birth year of registered voters by zip code for Cuyahoga County, Ohio
  - What is the voting percentage by zip code for registered voters as of registration deadline (October 5th, 2020)
+
 
 ### Role Distribution
 
@@ -159,6 +161,7 @@ Database Storage
 SQL Code Used to Join Tables and Rename Columns
 
  ![SQL Code Used to Join Tables and Rename Columns](images/go_vote_code.png)
+
 
 ### Database Integration
 
@@ -309,6 +312,8 @@ Look at NOPRTY affiliation more closely and potentially determine which issues a
 
 Allow more time to clean and analyze. We found relevant information regarding the dataset throughout the process, and found that we could have saved time going back to continue cleaning and creating new tables/data frames based on nuances and inconsistencies found later.
 
+
+
 ### Visual Representation
 
 
@@ -347,6 +352,7 @@ Median Birth Year of Voters by Zip Code for Cuyahoga County, Ohio
 *Color range is light to dark as birth year increases
 
 
+
 ### Conclusion
 
 #### What can be done to increase voter turnout in Cuyahoga County?
@@ -358,7 +364,7 @@ Additionally, focusing on increasing voter turnout for primary elections could h
 Finally, we feel that Millennial and Generation Z voters should be a targeted group as they have a very high registration rate, but significantly lower voter turnout rate.
 
 
-Target Voter Opportunities
+Target Voter Opportunities by Generational Group
 
 <p align="center">
   <img 
