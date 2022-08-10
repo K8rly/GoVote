@@ -364,6 +364,14 @@ Additionally, focusing on increasing voter turnout for primary elections could h
 Finally, we feel that Millennial and Generation Z voters should be a targeted group as they have a very high registration rate, but significantly lower voter turnout rate.
 
 
+<p align="center">
+  <img 
+    width="500"
+    height="300"
+    src="images/percentages.png"
+  >
+</p>
+
 Target Voter Opportunities by Generational Group
 
 <p align="center">
