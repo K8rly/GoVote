@@ -366,8 +366,8 @@ Finally, we feel that Millennial and Generation Z voters should be a targeted gr
 
 <p align="center">
   <img 
-    width="600"
-    height="500"
+    width="500"
+    height="300"
     src="images/percentages.png"
   >
 </p>
